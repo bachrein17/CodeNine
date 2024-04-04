@@ -1,0 +1,522 @@
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+    width: 100%;
+    position: fixed;
+    margin-right: 10%;
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+header {
+    padding-bottom: 12%;
+    padding-top: 5%;
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    background-color: #FF2525; 
+    color: white; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+}
+
+.text-center img {
+    border-radius: 25px;
+    width: 75%; /* Ubah lebar gambar menjadi 75% */
+    height: auto;
+}
+
+.Card-Resep {
+    padding-top: 8%;
+}
+
+.tipe {
+    background-color: #FF2525;
+    padding: 50px;
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tipe img {
+    padding: 20px;
+    margin-top: -150px;
+    transition: transform 0.3s ease;
+}
+
+.tipe img:hover {
+    transform: scale(1.1); 
+}
+
+.tipe h5 {
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    max-height: 150px;
+    align-items: center;
+}
+
+.carousel p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.carousel-item {
+    height: 75vh; 
+    width: 10px;
+}
+
+.carousel-item img {
+    height: 50%; 
+    object-fit: cover;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    height: 50%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.carousel-caption h5 {
+    padding-top: 30px;
+    font-size: 24px; 
+    padding-top: 30px;
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    color: transparent; 
+}
+
+.carousel-caption h6 {
+    font-size: 18px;
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    -webkit-background-clip: text; /* Untuk browser Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Untuk browser Safari/Chrome */
+    background-clip: text; /* Untuk browser lainnya */
+    color: transparent; /* Warna teks transparan untuk browser lainnya */ 
+    
+}
+
+.carousel-caption p {
+    font-size: 16px; 
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    -webkit-background-clip: text; /* Untuk browser Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Untuk browser Safari/Chrome */
+    background-clip: text; /* Untuk browser lainnya */
+    color: transparent; /* Warna teks transparan untuk browser lainnya */
+}
+
+.carousel-caption .btn {
+    font-size: 16px;
+    border: none;
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    border-radius: 30px;
+}
+
+.carousel-caption .btn:hover {
+    background: linear-gradient(to right, #e67171, #ebc985);
+}
+
+.Forum {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.Forum h1, p{
+    font-family: 'Poppins';
+}
+
+.artikel .card {
+    background: linear-gradient(45deg, #FF2525,#FF2525, #FFA800); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px; 
+}
+
+.artikel .card-img-top {
+    margin: 0 auto; 
+    display: block;
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+    object-fit: cover; 
+    max-height: 150px; 
+    transition: transform 0.3s ease;
+}
+
+.artikel .card-img-top:hover {
+    transform: scale(1.1); 
+    
+}
+
+.artikel .card-title {
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.artikelain .btn-primary {
+    background: linear-gradient(to right, #FF2525,#FFA800);
+    border: none;
+    padding: 15px 15%;
+    font-size: 14px; 
+    border-radius: 100px;background: linear-gradient(to right, #FF2525,#FFA800);
+    border: none;
+    padding: 15px 15%;
+    font-size: 14px; 
+    border-radius: 100px;
+}
+
+.forumlain .btn-primary {
+    background: linear-gradient(to right, #FF2525,#FFA800);
+    border: none;
+    padding: 15px 10%;
+    font-size: 14px; 
+    border-radius: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.border-custom {
+    display: inline-block;
+    padding-right: 100px;
+    padding: 4px 8px; 
+    border-radius: 10px; 
+    border: 2px solid #FF5733;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #FF2525;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tradisirasafooter,
+.sitemap,
+.socmed {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.tradisirasafooter img {
+    max-width: 100px;
+    height: auto;
+}
+
+.nostyle {
+    list-style-type: none;
+}
+
+.nostyle li a {
+    color: white;
+    text-decoration: none;
+}
+
+.tradisirasafooter p {
+    color: #fff; 
+}
+
+.socmed img{
+    width: 35px;
+    padding: 5px;
+}
+
+
+.footer2 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin:0;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.halogin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.halogin  .imgbx{
+    position: relative;
+    width: 50%;
+}
+
+.halogin  .imgbx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000, #5f0000);
+    z-index: -1;
+}
+
+.halogin  .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.halogin  .contentbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.halogin  .contentbx .formbx{
+    width: 80%;
+}
+
+.halogin  .contentbx .formbx h2{
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+.halogin  .contentbx .formbx p{
+    text-align: center;
+    width: 100%; 
+    font-weight: 400;
+    padding-bottom: 100px;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx .inputbx{
+    margin-bottom: 20px;
+}
+
+.halogin .contentbx .formbx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:#000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+    color: #ff0000;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: #FF2525;
+    border-image-slice: 1;
+    font-family: 'Poppins';
+}
+
+
+.inputbx a.signin {
+    text-align: center;
+}
+.inputbx a.signin {
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    color: #fff; 
+    border: none;
+    border-radius: 30px; 
+    padding: 10px 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins';
+}
+
+.inputbx a.signin:hover {
+    background: linear-gradient(to right, #f85f5f, #fac760);
+}
+
+.halogin  .contentbx .formbx .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 15%;
+    padding-bottom: 10px;
+}
+
+.halogin  .contentbx .formbx .remember-forgot .remember {
+    display: flex;
+    text-align: justify;
+    align-items: center; 
+}
+
+.halogin  .contentbx .formbx .remember-forgot .remember label {
+    color: #000000; 
+    font-weight: bold;
+    font-size: 14px; 
+    margin-left: 5px; 
+    white-space: nowrap; 
+    font-family: 'Poppins';
+}
+
+.halogin  .contentbx .formbx .remember-forgot .forgot-password {
+    margin-left: auto; 
+}
+
+.halogin .contentbx .formbx .remember-forgot .forgot-password a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.halogin  .contentbx .formbx .remember-forgot .forgot-password a:hover{
+    color: #ff0000;
+    font-family: 'Poppins';
+}
+
+
+.halogin  .contentbx .formbx .inputbx p{
+    color: #000000;
+    font-family: 'Poppins';
+}
+
+.halogin  .contentbx .formbx .inputbx p a{
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.halogin  .contentbx .formbx .inputbx p a:hover{
+    color: #f78585;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.halogin  .contentbx .formbx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halogin  .contentbx .formbx .sci li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #FF2525;
+ 
+}
+
+.halogin  .contentbx .formbx .sci li:hover{
+    background: linear-gradient(45deg, #FFA800, #FF2525);
+}
+
+.halogin  .contentbx .formbx .sci li img{
+    transform: scale(0.2);  
+
+}
+
+@media (max-width: 768px){
+    .halogin  .imgbx{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    } 
+    .halogin  .contentbx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    } 
+    .halogin  .contentbx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+  } 
+  .halogin  .contentbx .formbx{
+    width: 100%;
+    border-radius: 5%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px;
+} 
+}
+
+
+
+

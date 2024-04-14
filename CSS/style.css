@@ -1,6 +1,6 @@
 .navbar {
     background-color: transparent;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     width: 100%;
     position: fixed;
     margin-right: 10%;
@@ -20,16 +20,17 @@ header {
 
 .custom-btn {
     padding: 10px 20px;
-    background-color: #FF2525; 
-    color: white; 
-    border: none; 
-    border-radius: 50px; 
-    cursor: pointer; 
+    background-color: #FF2525;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .text-center img {
     border-radius: 25px;
-    width: 75%; /* Ubah lebar gambar menjadi 75% */
+    width: 75%;
+    /* Ubah lebar gambar menjadi 75% */
     height: auto;
 }
 
@@ -41,8 +42,8 @@ header {
     background-color: #FF2525;
     padding: 50px;
     width: 100%;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -54,7 +55,7 @@ header {
 }
 
 .tipe img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .tipe h5 {
@@ -62,7 +63,7 @@ header {
     color: white;
 }
 
-.card img {
+.artikel .card img {
     width: 100%;
     max-height: 150px;
     align-items: center;
@@ -72,15 +73,15 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 
 .carousel-item {
-    height: 75vh; 
+    height: 75vh;
     width: 10px;
 }
 
 .carousel-item img {
-    height: 50%; 
+    height: 50%;
     object-fit: cover;
     width: 90%;
     margin: 0 auto;
@@ -95,32 +96,40 @@ header {
 
 .carousel-caption h5 {
     padding-top: 30px;
-    font-size: 24px; 
+    font-size: 24px;
     padding-top: 30px;
     background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    background-clip: text; 
-    color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .carousel-caption h6 {
     font-size: 18px;
     background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text; /* Untuk browser Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Untuk browser Safari/Chrome */
-    background-clip: text; /* Untuk browser lainnya */
-    color: transparent; /* Warna teks transparan untuk browser lainnya */ 
-    
+    -webkit-background-clip: text;
+    /* Untuk browser Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    /* Untuk browser Safari/Chrome */
+    background-clip: text;
+    /* Untuk browser lainnya */
+    color: transparent;
+    /* Warna teks transparan untuk browser lainnya */
+
 }
 
 .carousel-caption p {
-    font-size: 16px; 
+    font-size: 16px;
     background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text; /* Untuk browser Safari/Chrome */
-    -webkit-text-fill-color: transparent; /* Untuk browser Safari/Chrome */
-    background-clip: text; /* Untuk browser lainnya */
-    color: transparent; /* Warna teks transparan untuk browser lainnya */
+    -webkit-background-clip: text;
+    /* Untuk browser Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    /* Untuk browser Safari/Chrome */
+    background-clip: text;
+    /* Untuk browser lainnya */
+    color: transparent;
+    /* Warna teks transparan untuk browser lainnya */
 }
 
 .carousel-caption .btn {
@@ -134,37 +143,54 @@ header {
     background: linear-gradient(to right, #e67171, #ebc985);
 }
 
-.Forum {
+.forum {
     padding-top: 50px;
     box-sizing: border-box;
 }
 
-.Forum h1, p{
+.forum h1,
+p {
     font-family: 'Poppins';
 }
 
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info .rounded-circle{
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-info small {
+    margin-left: 10px;
+}
+
 .artikel .card {
-    background: linear-gradient(45deg, #FF2525,#FF2525, #FFA800); 
+    background: linear-gradient(45deg, #FF2525, #FF2525, #FFA800);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .artikel .card-img-top {
-    margin: 0 auto; 
+    margin: 0 auto;
     display: block;
-    border-radius: 10px; 
-    margin-bottom: 15px; 
-    object-fit: cover; 
-    max-height: 150px; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    max-height: 150px;
     transition: transform 0.3s ease;
 }
 
 .artikel .card-img-top:hover {
-    transform: scale(1.1); 
-    
+    transform: scale(1.1);
+
 }
 
 .artikel .card-title {
@@ -173,22 +199,23 @@ header {
 }
 
 .artikelain .btn-primary {
-    background: linear-gradient(to right, #FF2525,#FFA800);
+    background: linear-gradient(to right, #FF2525, #FFA800);
     border: none;
     padding: 15px 15%;
-    font-size: 14px; 
-    border-radius: 100px;background: linear-gradient(to right, #FF2525,#FFA800);
+    font-size: 14px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #FF2525, #FFA800);
     border: none;
     padding: 15px 15%;
-    font-size: 14px; 
+    font-size: 14px;
     border-radius: 100px;
 }
 
 .forumlain .btn-primary {
-    background: linear-gradient(to right, #FF2525,#FFA800);
+    background: linear-gradient(to right, #FF2525, #FFA800);
     border: none;
     padding: 15px 10%;
-    font-size: 14px; 
+    font-size: 14px;
     border-radius: 100px;
 }
 
@@ -211,8 +238,8 @@ header {
 .border-custom {
     display: inline-block;
     padding-right: 100px;
-    padding: 4px 8px; 
-    border-radius: 10px; 
+    padding: 4px 8px;
+    border-radius: 10px;
     border: 2px solid #FF5733;
     margin-right: 10px;
 }
@@ -253,10 +280,10 @@ footer .container {
 }
 
 .tradisirasafooter p {
-    color: #fff; 
+    color: #fff;
 }
 
-.socmed img{
+.socmed img {
     width: 35px;
     padding: 5px;
 }
@@ -268,14 +295,14 @@ footer .container {
     text-align: center;
     justify-content: center;
     padding: 10px 0;
-    margin:0;
+    margin: 0;
 }
 
 
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -289,12 +316,12 @@ footer .container {
     display: flex;
 }
 
-.halogin  .imgbx{
+.halogin .imgbx {
     position: relative;
     width: 50%;
 }
 
-.halogin  .imgbx::before{
+.halogin .imgbx::before {
     content: '';
     position: absolute;
     top: 0;
@@ -305,7 +332,7 @@ footer .container {
     z-index: -1;
 }
 
-.halogin  .imgbx img{
+.halogin .imgbx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -314,7 +341,7 @@ footer .container {
     object-fit: cover;
 }
 
-.halogin  .contentbx{
+.halogin .contentbx {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,11 +349,11 @@ footer .container {
     height: 100%;
 }
 
-.halogin  .contentbx .formbx{
+.halogin .contentbx .formbx {
     width: 80%;
 }
 
-.halogin  .contentbx .formbx h2{
+.halogin .contentbx .formbx h2 {
     width: 100%;
     text-align: center;
     color: #000000;
@@ -338,22 +365,23 @@ footer .container {
     letter-spacing: 1px;
     font-family: 'Poppins';
 }
-.halogin  .contentbx .formbx p{
+
+.halogin .contentbx .formbx p {
     text-align: center;
-    width: 100%; 
+    width: 100%;
     font-weight: 400;
     padding-bottom: 100px;
     font-family: 'Poppins';
 }
 
-.halogin .contentbx .formbx .inputbx{
+.halogin .contentbx .formbx .inputbx {
     margin-bottom: 20px;
 }
 
-.halogin .contentbx .formbx span{
+.halogin .contentbx .formbx span {
     font-size: 16px;
     margin-bottom: 5px;
-    color:#000000;
+    color: #000000;
     font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Poppins';
@@ -377,11 +405,12 @@ footer .container {
 .inputbx a.signin {
     text-align: center;
 }
+
 .inputbx a.signin {
     background: linear-gradient(to right, #FF2525, #FFA800);
-    color: #fff; 
+    color: #fff;
     border: none;
-    border-radius: 30px; 
+    border-radius: 30px;
     padding: 10px 40px;
     cursor: pointer;
     text-decoration: none;
@@ -395,31 +424,31 @@ footer .container {
     background: linear-gradient(to right, #f85f5f, #fac760);
 }
 
-.halogin  .contentbx .formbx .remember-forgot {
+.halogin .contentbx .formbx .remember-forgot {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding-top: 15%;
     padding-bottom: 10px;
 }
 
-.halogin  .contentbx .formbx .remember-forgot .remember {
+.halogin .contentbx .formbx .remember-forgot .remember {
     display: flex;
     text-align: justify;
-    align-items: center; 
+    align-items: center;
 }
 
-.halogin  .contentbx .formbx .remember-forgot .remember label {
-    color: #000000; 
+.halogin .contentbx .formbx .remember-forgot .remember label {
+    color: #000000;
     font-weight: bold;
-    font-size: 14px; 
-    margin-left: 5px; 
-    white-space: nowrap; 
+    font-size: 14px;
+    margin-left: 5px;
+    white-space: nowrap;
     font-family: 'Poppins';
 }
 
-.halogin  .contentbx .formbx .remember-forgot .forgot-password {
-    margin-left: auto; 
+.halogin .contentbx .formbx .remember-forgot .forgot-password {
+    margin-left: auto;
 }
 
 .halogin .contentbx .formbx .remember-forgot .forgot-password a {
@@ -430,37 +459,37 @@ footer .container {
     font-family: 'Poppins';
 }
 
-.halogin  .contentbx .formbx .remember-forgot .forgot-password a:hover{
+.halogin .contentbx .formbx .remember-forgot .forgot-password a:hover {
     color: #ff0000;
     font-family: 'Poppins';
 }
 
 
-.halogin  .contentbx .formbx .inputbx p{
+.halogin .contentbx .formbx .inputbx p {
     color: #000000;
     font-family: 'Poppins';
 }
 
-.halogin  .contentbx .formbx .inputbx p a{
+.halogin .contentbx .formbx .inputbx p a {
     color: #ff0000;
     font-weight: bold;
     text-decoration: none;
 }
 
-.halogin  .contentbx .formbx .inputbx p a:hover{
+.halogin .contentbx .formbx .inputbx p a:hover {
     color: #f78585;
     font-weight: bold;
     text-decoration: none;
 }
 
 
-.halogin  .contentbx .formbx .sci{
+.halogin .contentbx .formbx .sci {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.halogin  .contentbx .formbx .sci li{
+.halogin .contentbx .formbx .sci li {
     list-style: none;
     width: 50px;
     height: 50px;
@@ -472,51 +501,50 @@ footer .container {
     border: 2px solid;
     border-radius: 50%;
     border-color: #FF2525;
- 
+
 }
 
-.halogin  .contentbx .formbx .sci li:hover{
+.halogin .contentbx .formbx .sci li:hover {
     background: linear-gradient(45deg, #FFA800, #FF2525);
 }
 
-.halogin  .contentbx .formbx .sci li img{
-    transform: scale(0.2);  
+.halogin .contentbx .formbx .sci li img {
+    transform: scale(0.2);
 
 }
 
-@media (max-width: 768px){
-    .halogin  .imgbx{
+@media (max-width: 768px) {
+    .halogin .imgbx {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-    } 
-    .halogin  .contentbx{
+    }
+
+    .halogin .contentbx {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
         z-index: 1;
-    } 
-    .halogin  .contentbx{
+    }
+
+    .halogin .contentbx {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
         z-index: 1;
-  } 
-  .halogin  .contentbx .formbx{
-    width: 100%;
-    border-radius: 5%;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 50px;
-} 
+    }
+
+    .halogin .contentbx .formbx {
+        width: 100%;
+        border-radius: 5%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 50px;
+    }
 }
-
-
-
-

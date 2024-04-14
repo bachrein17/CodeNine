@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/signup.css">
+    <!-- Tambahkan CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <section class="halogin">
+        <div class="imgbx">
+            <img src="image/loginawal.png" alt="">
+        </div>
+        <div class="contentbx">
+            <div class="formbx">
+                <h2>Sign Up</h2>
+                <p>Silahkan Isi kolom dibawah untuk mendaftar</p>
+                <form>
+                    <div class="inputbx">
+                        <span>Nama Lengkap</span>
+                        <input type="text" placeholder="Masukan Nama Lengkap" required>
+                    </div>
+                    <div class="inputbx">
+                        <span>Email</span>  
+                        <input type="text" placeholder="Masukan Username atau Email" required>
+                    </div>
+                    <div class="inputbx">
+                        <div class="checkbox-options">
+                            <label><input type="checkbox" id="kokiRole" name="role" value="koki"> Koki</label>
+                            <label><input type="checkbox" id="umkmRole" name="role" value="umkm"> UMKM</label>
+                            <label><input type="checkbox" id="ibuRumahTanggaRole" name="role" value="ibuRumahTangga"> Ibu Rumah Tangga</label>
+                            <label><input type="checkbox" id="lainnyaRole" name="role" value="lainnya"> Lainnya</label>
+                        </div>
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="passwordInput" placeholder="Masukan Password" required>
+                    </div>
+                    <!-- Tombol Sign Up yang memicu modal -->
+                    <div class="inputbx">
+                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+                    </div>
+                </form>
+                <ul class="sci">
+                    <li><img src="image/google.png" alt=""></li>
+                    <li><img src="image/facebook.png" alt=""></li>
+                </ul>
+                <div class="inputbx" style="text-align: center; padding-top: 30px;">
+                    <p>Sudah punya akun? <a href="login.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Kode Verifikasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Masukkan kode verifikasi yang telah dikirimkan ke alamat email anda.</p>
+                    <div class="form-group">
+                        <label for="confirmationCode">Kode Konfirmasi</label>
+                        <input type="text" class="form-control" id="confirmationCode" placeholder="Masukkan kode konfirmasi" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary">Konfirmasi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tambahkan JavaScript Bootstrap dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

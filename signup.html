@@ -54,15 +54,15 @@
                             </div>
                         </div>
                     </div>
-                            <div class="inputbx">
-                                <span>Password</span>
-                                <input type="password" id="passwordInput" placeholder="Masukan Password" required>
-                            </div>
-                            <!-- Tombol Sign Up yang memicu modal -->
-                            <div class="inputbx text-center" style="padding-top: 20px;">
-                                <button type="button" class="btn btn-primary btn-custom" data-toggle="modal"
-                                    data-target="#signupModal">Sign Up</button>
-                            </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" id="passwordInput" placeholder="Masukan Password" required>
+                    </div>
+                    <!-- Tombol Sign Up yang memicu modal -->
+                    <div class="inputbx text-center" style="padding-top: 20px;">
+                        <button type="button" class="btn btn-primary btn-custom" data-toggle="modal"
+                            data-target="#signupModal">Sign Up</button>
+                    </div>
                 </form>
                 <ul class="sci">
                     <li><img src="image/google.png" alt=""></li>
@@ -77,7 +77,8 @@
 
     <!-- Modal -->
     <!-- Modal pertama (untuk memasukkan kode verifikasi) -->
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;">
@@ -91,37 +92,41 @@
                     <p>Masukkan kode verifikasi yang telah dikirimkan ke alamat email anda.</p>
                     <div class="form-group verification-code">
                         <div class="verification-inputs">
-                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')"
+                                pattern="[0-9]" required>
                             <input type="text" maxlength="1" id="input5" pattern="[0-9]" required>
                         </div>
-                            <script>
-                                function moveToNext(currentInput, nextInputID) {
-                                    // Jika nilai dalam kotak input saat ini terisi
-                                    if (currentInput.value) {
-                                        // Dapatkan elemen input berikutnya berdasarkan ID
-                                        var nextInput = document.getElementById(nextInputID);
-                                        // Jika elemen input berikutnya ditemukan, fokuskan padanya
-                                        if (nextInput) {
-                                            nextInput.focus();
-                                        }
+                        <script>
+                            function moveToNext(currentInput, nextInputID) {
+                                // Jika nilai dalam kotak input saat ini terisi
+                                if (currentInput.value) {
+                                    // Dapatkan elemen input berikutnya berdasarkan ID
+                                    var nextInput = document.getElementById(nextInputID);
+                                    // Jika elemen input berikutnya ditemukan, fokuskan padanya
+                                    if (nextInput) {
+                                        nextInput.focus();
                                     }
                                 }
-                            </script>
+                            }
+                        </script>
                         <a class="resend" href="#Resend">Resend Code</a>
                     </div>
                 </div>
-               <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
-    <!-- Ganti onclick -->
-    <button type="button" class="btn btn-primary" onclick="redirectToSuccessModal()">Konfirmasi</button>
-</div>
+                <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
+                    <!-- Ganti onclick -->
+                    <button type="button" class="btn btn-primary" onclick="redirectToSuccessModal()">Konfirmasi</button>
+                </div>
 
             </div>
         </div>
     </div>
-    
+
 
     <!-- Modal kedua (untuk menampilkan pesan verifikasi berhasil) -->
     <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
@@ -138,9 +143,9 @@
                     <img src="image/chekclist.png" alt="" style="margin-bottom: 20px;">
                     <h3>Akun Anda Berhasil Dibuat</h3>
                     <p>Selamat menjelajahi tradisi rasa anda.</p>
-                </div>                
+                </div>
                 <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
                         onclick="redirectToHomepage()">Homepage</button>
                 </div>
             </div>

@@ -124,8 +124,24 @@
     width: 100%;
 }
 
+.modal-footer .btn-primary {
+    background: linear-gradient(to right, #FF2525, #FFA800) ;
+    border: none;
+    color: white ;
+    padding: 15px 15%;
+    font-size: 14px;
+    border-radius: 100px;
+    width: 80%;
+    border: none;
+
+}
+
+.modal-footer .btn-primary:hover{
+    background: linear-gradient(to right, #f75d5d, #f7c157) ;
+}
+
 .btn-custom:hover {
-    background: linear-gradient(to right, #f85f5f, #fac760);
+    background: linear-gradient(to right, #f85f5f, #fff9ed);
 }
 
 .checkbox-options .form-check{
@@ -161,6 +177,7 @@
 .halogin .contentbx .formbx .sci li img {
     transform: scale(0.2);
 }
+
 
 .verification-inputs {
     display: flex;
@@ -224,11 +241,13 @@
     font-size: 12px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .verification-inputs input {
-        width: 30px; /* Ukuran input yang lebih kecil untuk layar kecil */
-        height: 30px; /* Ukuran input yang lebih kecil untuk layar kecil */
-        font-size: 14px; /* Ukuran font yang lebih kecil untuk layar kecil */
+        width: 30px; 
+        height: 30px; 
+        font-size: 14px; 
 
     }
 }

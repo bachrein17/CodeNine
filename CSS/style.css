@@ -19,7 +19,7 @@ header {
 }
 
 .custom-btn {
-    padding: 10px 20px;
+    padding: 14px 30px;
     background-color: #FF2525;
     color: white;
     border: none;
@@ -38,8 +38,21 @@ header {
     padding-top: 8%;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 .tipe {
-    background-color: #FF2525;
+    background: linear-gradient(#FFA800, #FF2525);
     padding: 50px;
     width: 100%;
     justify-content: center;
@@ -119,7 +132,7 @@ header {
 
 }
 
-.card-body h5{
+.card-body h5 {
     color: white;
 }
 
@@ -162,7 +175,7 @@ p {
     align-items: center;
 }
 
-.profile-info .rounded-circle{
+.profile-info .rounded-circle {
     border-radius: 50%;
     margin-right: 10px;
     width: 50px;
@@ -244,59 +257,70 @@ p {
     margin-right: 10px;
 }
 
+
 footer {
     background-color: #FF2525;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 30px 0;
+    color: white;
+}
+
+.deskripsi{
+    display: flex;
+}
+
+.deskripsi img{
+    width: 100px;
+    height: 100px;
+}
+
+.deskripsi p{
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: 'Poppins';
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.tradisirasafooter,
-.sitemap,
-.socmed {
-    flex: 1;
-    padding: 0 20px;
+.tradisirasafooter, .sitemap, .socmed {
+    flex-basis: 30%;
 }
 
 .tradisirasafooter img {
     max-width: 100px;
-    height: auto;
+    margin-bottom: 10px;
 }
 
-.nostyle {
-    list-style-type: none;
+.sitemap ul, .socmed ul {
+    list-style: none;
+    padding: 0;
 }
 
-.nostyle li a {
-    color: white;
-    text-decoration: none;
-}
-
-.tradisirasafooter p {
-    color: #fff;
+.sitemap li, .socmed li {
+    margin-bottom: 5px;
 }
 
 .socmed img {
-    width: 35px;
-    padding: 5px;
+    max-width: 30px;
+    margin-right: 10px;
 }
 
-
+/* Style for secondary footer */
 .footer2 {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    justify-content: center;
     padding: 10px 0;
-    margin: 0;
 }
+
+
+
+
 
 
 

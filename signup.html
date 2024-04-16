@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Sign Up</title>
 </head>
 
@@ -28,25 +30,39 @@
                         <input type="text" placeholder="Masukan Nama Lengkap" required>
                     </div>
                     <div class="inputbx">
-                        <span>Email</span>  
+                        <span>Email</span>
                         <input type="text" placeholder="Masukan Username atau Email" required>
                     </div>
                     <div class="inputbx">
+                        <p style="text-align: left; margin-bottom: 10px; margin-right: 10px;">Role</p>
                         <div class="checkbox-options">
-                            <label><input type="checkbox" id="kokiRole" name="role" value="koki"> Koki</label>
-                            <label><input type="checkbox" id="umkmRole" name="role" value="umkm"> UMKM</label>
-                            <label><input type="checkbox" id="ibuRumahTanggaRole" name="role" value="ibuRumahTangga"> Ibu Rumah Tangga</label>
-                            <label><input type="checkbox" id="lainnyaRole" name="role" value="lainnya"> Lainnya</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="kokiRole" name="role" value="koki">
+                                <label for="kokiRole" class="form-check-label">Koki</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="umkmRole" name="role" value="umkm">
+                                <label for="umkmRole" class="form-check-label">UMKM</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="ibuRumahTanggaRole" name="role" value="ibuRumahTangga">
+                                <label for="ibuRumahTanggaRole" class="form-check-label">Ibu Rumah Tangga</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="lainnyaRole" name="role" value="lainnya">
+                                <label for="lainnyaRole" class="form-check-label">Lainnya</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="inputbx">
-                        <span>Password</span>
-                        <input type="password" id="passwordInput" placeholder="Masukan Password" required>
-                    </div>
-                    <!-- Tombol Sign Up yang memicu modal -->
-                    <div class="inputbx text-center" style="padding-top: 20px;">
-                        <button type="button" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#signupModal">Sign Up</button>
-                    </div>
+                            <div class="inputbx">
+                                <span>Password</span>
+                                <input type="password" id="passwordInput" placeholder="Masukan Password" required>
+                            </div>
+                            <!-- Tombol Sign Up yang memicu modal -->
+                            <div class="inputbx text-center" style="padding-top: 20px;">
+                                <button type="button" class="btn btn-primary btn-custom" data-toggle="modal"
+                                    data-target="#signupModal">Sign Up</button>
+                            </div>
                 </form>
                 <ul class="sci">
                     <li><img src="image/google.png" alt=""></li>
@@ -60,37 +76,97 @@
     </section>
 
     <!-- Modal -->
+    <!-- Modal pertama (untuk memasukkan kode verifikasi) -->
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Kode Verifikasi</h5>
+                <div class="modal-header" style="border: none;">
+                    <h5 class="modal-title" id="signupModalLabel"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="border: none;">
+                    <h5>Kode Verifikasi</h5>
                     <p>Masukkan kode verifikasi yang telah dikirimkan ke alamat email anda.</p>
-                    <div class="form-group">
-                        <label for="confirmationCode">Kode Konfirmasi</label>
-                        <input type="text" class="form-control" id="confirmationCode" placeholder="Masukkan kode konfirmasi" required>
+                    <div class="form-group verification-code">
+                        <div class="verification-inputs">
+                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input5" pattern="[0-9]" required>
+                        </div>
+                            <script>
+                                function moveToNext(currentInput, nextInputID) {
+                                    // Jika nilai dalam kotak input saat ini terisi
+                                    if (currentInput.value) {
+                                        // Dapatkan elemen input berikutnya berdasarkan ID
+                                        var nextInput = document.getElementById(nextInputID);
+                                        // Jika elemen input berikutnya ditemukan, fokuskan padanya
+                                        if (nextInput) {
+                                            nextInput.focus();
+                                        }
+                                    }
+                                }
+                            </script>
+                        <a class="resend" href="#Resend">Resend Code</a>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="redirectToHomepage()">Konfirmasi</button>
-                </div>
-                <script>
-                    function redirectToHomepage() {
-                        window.location.href = "homepage.html";
-                    }
-                </script>
+               <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
+    <!-- Ganti onclick -->
+    <button type="button" class="btn btn-primary" onclick="redirectToSuccessModal()">Konfirmasi</button>
+</div>
+
             </div>
         </div>
     </div>
     
+
+    <!-- Modal kedua (untuk menampilkan pesan verifikasi berhasil) -->
+    <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
+        aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationSuccessModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <img src="image/chekclist.png" alt="" style="margin-bottom: 20px;">
+                    <h3>Akun Anda Berhasil Dibuat</h3>
+                    <p>Selamat menjelajahi tradisi rasa anda.</p>
+                </div>                
+                <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="redirectToHomepage()">Homepage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToHomepage() {
+            // Redirect ke homepage
+            window.location.href = "homepage.html";
+        }
+    </script>
+
+    <script>
+        function redirectToSuccessModal() {
+            // Sembunyikan modal pertama
+            $('#signupModal').modal('hide');
+            // Tampilkan modal kedua
+            $('#verificationSuccessModal').modal('show');
+        }
+    </script>
+
     <!-- Tambahkan JavaScript Bootstrap dan jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

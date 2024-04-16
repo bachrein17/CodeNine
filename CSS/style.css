@@ -1,5 +1,5 @@
 .navbar {
-    background-color: transparent;
+    background-color: #F8F8F8;
     backdrop-filter: blur(10px);
     width: 100%;
     position: fixed;
@@ -117,6 +117,10 @@ header {
     color: transparent;
     /* Warna teks transparan untuk browser lainnya */
 
+}
+
+.card-body h5{
+    color: white;
 }
 
 .carousel-caption p {

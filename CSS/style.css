@@ -13,6 +13,16 @@
     font-family: 'Poppins';
 }
 
+.nav-item a.nav-link.active img {
+    transition: filter 0.3s ease-in-out; /* Efek transisi hanya untuk filter */
+}
+
+.nav-item a.nav-link.active:hover img {
+    filter: invert(1);
+    filter: drop-shadow(0px 0px 5px red); /* Menambahkan bayangan merah */
+}
+
+
 header {
     padding-bottom: 12%;
     padding-top: 5%;
@@ -82,83 +92,35 @@ header {
     align-items: center;
 }
 
-.carousel p {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel-item {
-    height: 75vh;
-    width: 10px;
-}
-
-.carousel-item img {
-    height: 50%;
-    object-fit: cover;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.carousel-caption {
-    height: 50%;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Poppins';
-}
-
-.carousel-caption h5 {
-    padding-top: 30px;
-    font-size: 24px;
-    padding-top: 30px;
-    background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.carousel-caption h6 {
-    font-size: 18px;
-    background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text;
-    /* Untuk browser Safari/Chrome */
-    -webkit-text-fill-color: transparent;
-    /* Untuk browser Safari/Chrome */
-    background-clip: text;
-    /* Untuk browser lainnya */
-    color: transparent;
-    /* Warna teks transparan untuk browser lainnya */
-
-}
 
 .card-body h5 {
     color: white;
 }
 
-.carousel-caption p {
-    font-size: 16px;
-    background: linear-gradient(to right, #FF2525, #FFA800);
-    -webkit-background-clip: text;
-    /* Untuk browser Safari/Chrome */
-    -webkit-text-fill-color: transparent;
-    /* Untuk browser Safari/Chrome */
-    background-clip: text;
-    /* Untuk browser lainnya */
-    color: transparent;
-    /* Warna teks transparan untuk browser lainnya */
-}
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .card-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #ff6347;
+    border-color: #ff6347;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff4500;
+    border-color: #ff4500;
+  }
 
-.carousel-caption .btn {
-    font-size: 16px;
-    border: none;
-    background: linear-gradient(to right, #FF2525, #FFA800);
-    border-radius: 30px;
-}
-
-.carousel-caption .btn:hover {
-    background: linear-gradient(to right, #e67171, #ebc985);
-}
 
 .forum {
     padding-top: 50px;

@@ -266,7 +266,7 @@ small {
 
 .artikel .card-img-top:hover {
     transform: scale(1.1);
-
+    filter: grayscale(10%) brightness(60%);
 }
 
 .artikel .card-title {

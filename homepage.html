@@ -121,8 +121,12 @@
         <p>Bekerja Sama Dengan</p>
         <p>Kementrian Pariwisata dan Ekonomi Kreatif Republik Indonesia</p>
         <div class="logok">
-            <img src="image/kemenparekraf.png" alt="">
-            <img src="image/logo.png" alt="">
+            <a href="https://kemenparekraf.go.id/" target="_blank">
+                <img src="image/kemenparekraf.png" alt="">
+            </a>
+            <a href="#">
+                <img src="image/logo.png" alt="">
+            </a>
         </div>
     </div>
 
@@ -323,14 +327,16 @@
                                 </div>
                                 <div class="ms-auto">
                                     <span class="border-custom">
-                                        <img src="image/like.png" alt="" style="width: 15px; height: 12px;">10
+                                        <button onclick="likeClicked('likeCount1')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount1">10</span>
+                                        </button>
                                     </span>
-                                    <span class="border-custom">
+                                    <button class="border-custom" onclick="viewClicked()">
                                         <img src="image/view.png" alt="" style="width: 15px; height: 12px;">22
-                                    </span>
-                                    <span class="border-custom">
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
                                         <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">5
-                                    </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -366,14 +372,16 @@
                                 </div>
                                 <div class="ms-auto">
                                     <span class="border-custom">
-                                        <img src="image/like.png" alt="" style="width: 15px; height: 12px;">15
+                                        <button onclick="likeClicked('likeCount2')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount2">10</span>
+                                        </button>
                                     </span>
-                                    <span class="border-custom">
+                                    <button class="border-custom" onclick="viewClicked()">
                                         <img src="image/view.png" alt="" style="width: 15px; height: 12px;">19
-                                    </span>
-                                    <span class="border-custom">
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
                                         <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">10
-                                    </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -397,14 +405,16 @@
                                 </div>
                                 <div class="ms-auto">
                                     <span class="border-custom">
-                                        <img src="image/like.png" alt="" style="width: 15px; height: 12px;">8
+                                        <button onclick="likeClicked('likeCount3')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount3">10</span>
+                                        </button>
                                     </span>
-                                    <span class="border-custom">
-                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">10
-                                    </span>
-                                    <span class="border-custom">
+                                    <button class="border-custom" onclick="viewClicked()">
+                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">12
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
                                         <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">4
-                                    </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -429,15 +439,39 @@
                                 </div>
                                 <div class="ms-auto">
                                     <span class="border-custom">
-                                        <img src="image/like.png" alt="" style="width: 15px; height: 12px;">6
+                                        <button onclick="likeClicked('likeCount4')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount4">10</span>
+                                        </button>
                                     </span>
-                                    <span class="border-custom">
+                                    <button class="border-custom" onclick="viewClicked()">
                                         <img src="image/view.png" alt="" style="width: 15px; height: 12px;">17
-                                    </span>
-                                    <span class="border-custom">
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
                                         <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">12
-                                    </span>
+                                    </button>
                                 </div>
+                                <script>
+                                    // Your JavaScript code
+                                    let likeCounts = {
+                                        likeCount1: 10,
+                                        likeCount2: 10,
+                                        likeCount3: 10,
+                                        likeCount4: 10
+                                    };
+                                
+                                    function likeClicked(elementId) {
+                                        likeCounts[elementId]++; // Increment like count
+                                        document.getElementById(elementId).innerText = likeCounts[elementId]; // Update like count display
+                                    }
+                                
+                                    function viewClicked() {
+                                        // Your viewClicked function
+                                    }
+                                
+                                    function commentClicked() {
+                                        // Your commentClicked function
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>

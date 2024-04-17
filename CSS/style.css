@@ -113,7 +113,7 @@ header {
     max-width: 80%;
     border: none;
     margin: 0 auto;
-    background: linear-gradient(#FFA800, #FF2525);
+    background: linear-gradient(to bottom left, #FFA800, #FF2525);
 
 }
 
@@ -327,10 +327,24 @@ small {
     border-radius: 10px;
     border: 2px solid #FF5733;
     margin-right: 10px;
+    background-color: white;
 }
 
 .border-custom img {
     padding-right: 2px;
+}
+
+.border-custom button {
+    border: none; 
+    background: none; 
+    padding: 0; 
+    outline: none; 
+    width: 100%;
+}
+
+.border-custom img {
+    width: 15px;
+    height: 12px;
 }
 
 footer {

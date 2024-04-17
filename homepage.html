@@ -20,52 +20,52 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#forum " onclick="closeNavbar()">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#resep" onclick="closeNavbar()">Resep</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#favorit"
-                            onclick="closeNavbar()">Favorit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#uploadresep"
-                            onclick="closeNavbar()">Unggah Resep</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
-                                src="image/notifhitam.png" alt="" class="icon-img"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
-                                src="image/akunhitam.png" alt=""></a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="forum.html" onclick="closeNavbar()">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#resep" onclick="closeNavbar()">Resep</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#favorit"
+                                onclick="closeNavbar()">Favorit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#uploadresep"
+                                onclick="closeNavbar()">Unggah Resep</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
+                                    src="image/notifhitam.png" alt="" class="icon-img"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
+                                    src="image/akunhitam.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <script>
-            function closeNavbar() {
-                var navbar = document.getElementById('navbarNav');
-                if (navbar.classList.contains('show')) {
-                    navbar.classList.remove('show');
+            <script>
+                function closeNavbar() {
+                    var navbar = document.getElementById('navbarNav');
+                    if (navbar.classList.contains('show')) {
+                        navbar.classList.remove('show');
+                    }
                 }
-            }
-        </script>
-    </nav>
+            </script>
+        </nav>
     <div class="container">
         <header class="container-fluid banner">
             <div class="row align-items-center">
@@ -500,7 +500,7 @@
                 <div class="sitemapk">
                     <ul class="nostyle">
                         <li><a href="#">Favorit</a></li>
-                        <li><a href="#">Forum</a></li>
+                        <li><a href="forum.html">Forum</a></li>
                     </ul>
                     <ul class="ul2">
                         <li><a href="#">Resep</a></li>

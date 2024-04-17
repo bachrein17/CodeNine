@@ -93,33 +93,48 @@ header {
 }
 
 
-.card-body h5 {
+.carousel .card-body h5 {
     color: white;
 }
 
-.card {
-    max-width: 800px;
+.carousel .card-body p {
+    color: rgb(255, 255, 255);
+}
+
+.carousel .card {
+    max-width: 80%;
+    border: none;
     margin: 0 auto;
+    background: linear-gradient(#FFA800,#FF2525);
+
   }
+
+ .carousel .card-body{
+    padding-top: 40px;
+ }
   
-  .card-img {
-    height: 100%;
+.carousel .card-img {
+    max-height: 350px;
     object-fit: cover;
   }
   
-  .card-title {
+.carousel .card-title {
     font-weight: bold;
   }
   
-  .btn-primary {
-    background-color: #ff6347;
+.carousel .btn-primary {
+    background-color: #ffffff;
     border-color: #ff6347;
+    color: red;
+    border-radius: 30px;
   }
   
-  .btn-primary:hover {
-    background-color: #ff4500;
-    border-color: #ff4500;
+.carousel .btn-primary:hover {
+    background-color: #faa789;
+    border-color: #f19f80;
   }
+
+  
 
 
 .forum {
@@ -130,6 +145,19 @@ header {
 .forum h1,
 p {
     font-family: 'Poppins';
+}
+
+.forum .col-md-4 img{
+    max-width: 500px;
+    max-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .profile-info {
@@ -146,6 +174,10 @@ p {
 
 .profile-info small {
     margin-left: 10px;
+}
+
+.artikel{
+    padding-top: 100px;
 }
 
 .artikel .card {
@@ -197,7 +229,7 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 .card {

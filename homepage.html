@@ -20,52 +20,53 @@
 
 
 <body>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="forum.html" onclick="closeNavbar()">Forum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#resep" onclick="closeNavbar()">Resep</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#favorit"
-                                onclick="closeNavbar()">Favorit</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#uploadresep"
-                                onclick="closeNavbar()">Unggah Resep</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
-                                    src="image/notifhitam.png" alt="" class="icon-img"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
-                                    src="image/akunhitam.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="forum.html"
+                            onclick="closeNavbar()">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#resep" onclick="closeNavbar()">Resep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#favorit"
+                            onclick="closeNavbar()">Favorit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#uploadresep"
+                            onclick="closeNavbar()">Unggah Resep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
+                                src="image/notifhitam.png" alt="" class="icon-img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
+                                src="image/akunhitam.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
-            <script>
-                function closeNavbar() {
-                    var navbar = document.getElementById('navbarNav');
-                    if (navbar.classList.contains('show')) {
-                        navbar.classList.remove('show');
-                    }
+        </div>
+        <script>
+            function closeNavbar() {
+                var navbar = document.getElementById('navbarNav');
+                if (navbar.classList.contains('show')) {
+                    navbar.classList.remove('show');
                 }
-            </script>
-        </nav>
+            }
+        </script>
+    </nav>
     <div class="container">
         <header class="container-fluid banner">
             <div class="row align-items-center">
@@ -328,7 +329,8 @@
                                 <div class="ms-auto">
                                     <span class="border-custom">
                                         <button onclick="likeClicked('likeCount1')">
-                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount1">10</span>
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount1">10</span>
                                         </button>
                                     </span>
                                     <button class="border-custom" onclick="viewClicked()">
@@ -373,7 +375,8 @@
                                 <div class="ms-auto">
                                     <span class="border-custom">
                                         <button onclick="likeClicked('likeCount2')">
-                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount2">10</span>
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount2">10</span>
                                         </button>
                                     </span>
                                     <button class="border-custom" onclick="viewClicked()">
@@ -406,7 +409,8 @@
                                 <div class="ms-auto">
                                     <span class="border-custom">
                                         <button onclick="likeClicked('likeCount3')">
-                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount3">10</span>
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount3">10</span>
                                         </button>
                                     </span>
                                     <button class="border-custom" onclick="viewClicked()">
@@ -440,7 +444,8 @@
                                 <div class="ms-auto">
                                     <span class="border-custom">
                                         <button onclick="likeClicked('likeCount4')">
-                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span id="likeCount4">10</span>
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount4">10</span>
                                         </button>
                                     </span>
                                     <button class="border-custom" onclick="viewClicked()">
@@ -458,16 +463,16 @@
                                         likeCount3: 10,
                                         likeCount4: 10
                                     };
-                                
+
                                     function likeClicked(elementId) {
                                         likeCounts[elementId]++; // Increment like count
                                         document.getElementById(elementId).innerText = likeCounts[elementId]; // Update like count display
                                     }
-                                
+
                                     function viewClicked() {
                                         // Your viewClicked function
                                     }
-                                
+
                                     function commentClicked() {
                                         // Your commentClicked function
                                     }
@@ -478,11 +483,19 @@
                 </div>
             </div>
             <div class="forumlain text-center" style="padding-top: 20px; padding-bottom: 20px;">
-                <button type="button" class="btn btn-primary btn-custom">Forum Lainnya</button>
+                <button type="button" class="btn btn-primary btn-custom" onclick="redirectToForumPage()">Forum
+                    Lainnya</button>
             </div>
+
+            <script>
+                // JavaScript function to redirect to forum.html page
+                function redirectToForumPage() {
+                    window.location.href = 'forum.html'; // Mengarahkan ke halaman forum.html
+                }
+            </script>
         </div>
     </section>
-    
+
 
     <footer>
         <div class="container">

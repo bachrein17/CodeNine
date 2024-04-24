@@ -1,0 +1,115 @@
+.judul h2
+{
+    font-family: 'Poppins';
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 77px;
+}
+.judul p
+{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 706px;
+    height: 70px;
+    margin: 0 auto;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    margin-top: 40px;
+    border: 2px solid red;
+
+  }
+
+  .search-container input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: red;
+  }
+  
+  .search-container button {
+    background-color: linear-gradient(to right, #FF2525, #FFA800);
+    border: none;
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .text1 h2
+  {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 31px;
+  } 
+  .card-body .tag
+  {
+    display: flex;
+  }
+  .card-favorit .card
+  {
+    border-radius: 25px;
+    border-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.159);
+    margin-top: 50px;
+  }
+  .card-favorit
+  {
+    width: 373px;
+    max-height: 464px;
+    display: flex;
+    float: left;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-img-top 
+  {
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+  .card .card-img-top 
+  {
+    border-radius: 35px;
+  }
+  .card-text
+  {
+    padding-top: 7px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: red;
+  }
+  .card-deskripsi
+  {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: red;
+  }
+  .tag span
+  {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    color: red;
+  }
+  .card
+  {
+    margin: 35px;
+  }

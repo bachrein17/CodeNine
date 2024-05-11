@@ -1,0 +1,722 @@
+.navbar {
+    background-color: #F8F8F8;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    margin-right: 10%;
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.nav-item a.nav-link.active img {
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.navbar-nav .nav-link.active:hover {
+    color: white;
+    border: 2px solid transparent; 
+    border-radius: 30px;    
+    background-image: linear-gradient(to bottom left,#FFA800 ,#FF2525);
+    background-clip: padding-box; 
+    border: none;
+}
+
+
+
+header {
+    padding-bottom: 12%;
+    padding-top: 5%;
+}
+
+.custom-btn {
+    padding: 14px 30px;
+    background-color: #FF2525;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.text-center img {
+    border-radius: 25px;
+    width: 75%;
+    /* Ubah lebar gambar menjadi 75% */
+    height: auto;
+}
+
+.tipe {
+    background: linear-gradient(to left,#FFA800, #FF2525);
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tipe img {
+    padding: 20px;
+    margin-top: -150px;
+    transition: transform 0.3s ease;
+}
+
+.tipe img:hover {
+    transform: scale(1.1);
+    filter: grayscale(10%) brightness(60%);
+}
+
+.tipe h5 {
+    text-align: center;
+    color: white;
+}
+
+.resep{
+    padding-top: 30px;
+}
+
+.artikel .card img {
+    width: 100%;
+    max-height: 150px;
+    align-items: center;
+}
+
+.kerjasama {
+    padding-top: 50px;
+}
+
+.kerjasama p{
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.kerjasama h3 {
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+.kerjasama h5 {
+    font-size: 14px;
+}
+
+.logok {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logok img {
+    max-width: 100px;
+    margin: 0 20px; 
+}
+
+.carousel .card {
+    max-width: 80%;
+    border: none;
+    margin: 0 auto;
+    background: linear-gradient(to bottom left, #FFA800, #FF2525);
+
+}
+
+
+.carousel .card-body {
+    padding-top: 40px;
+}
+
+.carousel .card-body h5 {
+    color: white;
+}
+
+.carousel .card-body p {
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.carousel .card-img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.carousel .card-title {
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.carousel .btn-primary {
+    background-color: #ffffff;
+    border-color: #ff6347;
+    color: red;
+    border-radius: 30px;
+}
+
+.carousel .btn-primary:hover {
+    background-color: #faa789;
+    border-color: #f19f80;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.card-header {
+    max-height: 80%;
+}
+
+
+.forum {
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+.forum h1,
+p {
+    font-family: 'Poppins';
+}
+
+.forum .col-md-4 img {
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.forum .card-title {
+    font-family: 'Poppins';
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.forum .card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Ubah nilai sesuai preferensi Anda */
+}
+
+.forum .card-text {
+    font-size: 16px;
+}
+
+.forum .lastupdate {
+    font-family: 'Poppins';
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.forum .profileakun p,
+small {
+    font-family: 'Poppins';
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+@media (max-width: 768px) {
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info .rounded-circle {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-info small {
+    margin-left: 10px;
+}
+
+.artikel {
+    padding-top: 50px;
+}
+
+.artikel .card {
+    background: linear-gradient(45deg, #FF2525, #FF2525, #FFA800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.artikel .card-img-top {
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    max-height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.artikel .card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.artikel .card-title {
+    color: white;
+}
+
+
+.artikelain .btn-primary {
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    border: none;
+    padding: 15px 15%;
+    font-size: 14px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #FF2525, #FFA800);
+}
+
+.forumlain .btn-primary {
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    border: none;
+    padding: 15px 10%;
+    font-size: 14px;
+    border-radius: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* 2 kolom */
+    grid-template-rows: repeat(2, minmax(0, auto));
+    /* 2 baris */
+    width: 100%;
+    gap: 10px;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        /* 1 kolom */
+    }
+}
+
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.border-custom {
+    display: inline-block;
+    padding: 4px 18px;
+    border-radius: 10px;
+    border: 2px solid #FF5733;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.border-custom img {
+    padding-right: 2px;
+}
+
+.border-custom button {
+    border: none; 
+    background: none; 
+    padding: 0; 
+    outline: none; 
+    width: 100%;
+}
+
+.border-custom img {
+    width: 15px;
+    height: 12px;
+}
+
+footer {
+    background-color: #FF2525;
+    padding: 30px 0;
+    color: white;
+}
+
+.deskripsi {
+    display: flex;
+}
+
+.deskripsi img {
+    width: 100px;
+    height: 100px;
+}
+
+.deskripsi p {
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: 'Poppins';
+}
+
+@media (max-width: 768px) {
+    .deskripsi p {
+        display: none;
+    }
+}
+
+.sitemap .nostyle li a,
+.sitemap .ul2 li a,
+.socmed .nostyle li a {
+    color: white;
+    /* Mengubah warna teks link menjadi putih */
+    text-decoration: none;
+    /* Menghilangkan gaya default tautan */
+}
+
+.sitemap .nostyle li a:hover,
+.sitemap .ul2 li a:hover,
+.socmed .nostyle li a:hover {
+    font-weight: bold;
+}
+
+.sitemapk {
+    display: flex;
+    align-items: flex-start;
+}
+
+.sitemapk {
+    display: flex;
+    margin-right: 20px;
+    /* Memberikan jarak antara dua bagian sitemap */
+}
+
+.sitemapk1 {
+    display: flex;
+    flex-direction: column;
+    /* Menata item-item di dalamnya dalam satu kolom */
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.tradisirasafooter,
+.sitemap,
+.socmed {
+    flex-basis: 30%;
+}
+
+.tradisirasafooter img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.sitemap .ul2 {
+    padding-left: 10px;
+}
+
+.sitemap ul,
+.socmed ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap li,
+.socmed li {
+    margin-bottom: 5px;
+}
+
+.socmed img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.footer2 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.halogin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.halogin .imgbx {
+    position: relative;
+    width: 50%;
+}
+
+.halogin .imgbx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000, #5f0000);
+    z-index: -1;
+}
+
+.halogin .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.halogin .contentbx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.halogin .contentbx .formbx {
+    width: 80%;
+}
+
+.halogin .contentbx .formbx h2 {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx p {
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    padding-bottom: 100px;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx .inputbx {
+    margin-bottom: 20px;
+}
+
+.halogin .contentbx .formbx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+    color: #ff0000;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+    border-color: #FF2525;
+    border-image-slice: 1;
+    font-family: 'Poppins';
+}
+
+
+.inputbx a.signin {
+    text-align: center;
+}
+
+.inputbx a.signin {
+    background: linear-gradient(to right, #FF2525, #FFA800);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins';
+}
+
+.inputbx a.signin:hover {
+    background: linear-gradient(to right, #f85f5f, #fac760);
+}
+
+.halogin .contentbx .formbx .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 10px;
+}
+
+.halogin .contentbx .formbx .remember-forgot .remember {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.halogin .contentbx .formbx .remember-forgot .remember label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    white-space: nowrap;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx .remember-forgot .forgot-password {
+    margin-left: auto;
+}
+
+.halogin .contentbx .formbx .remember-forgot .forgot-password a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx .remember-forgot .forgot-password a:hover {
+    color: #ff0000;
+    font-family: 'Poppins';
+}
+
+
+.halogin .contentbx .formbx .inputbx p {
+    color: #000000;
+    font-family: 'Poppins';
+}
+
+.halogin .contentbx .formbx .inputbx p a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.halogin .contentbx .formbx .inputbx p a:hover {
+    color: #f78585;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.halogin .contentbx .formbx .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halogin .contentbx .formbx .sci li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #FF2525;
+
+}
+
+.halogin .contentbx .formbx .sci li:hover {
+    background: linear-gradient(45deg, #FFA800, #FF2525);
+}
+
+.halogin .contentbx .formbx .sci li img {
+    transform: scale(0.2);
+
+}
+
+@media (max-width: 768px) {
+    .halogin .imgbx {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .halogin .contentbx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .halogin .contentbx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .halogin .contentbx .formbx {
+        width: 100%;
+        border-radius: 5%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 50px;
+    }
+}

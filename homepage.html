@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Tradisi Rasa</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="forum.html"
+                            onclick="closeNavbar()">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#resep" onclick="closeNavbar()">Resep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="favorit.html"
+                            onclick="closeNavbar()">Favorit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#uploadresep"
+                            onclick="closeNavbar()">Unggah Resep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
+                                src="image/notifhitam.png" alt="" class="icon-img"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
+                                src="image/akunhitam.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function closeNavbar() {
+                var navbar = document.getElementById('navbarNav');
+                if (navbar.classList.contains('show')) {
+                    navbar.classList.remove('show');
+                }
+            }
+        </script>
+    </nav>
+    <div class="container">
+        <header class="container-fluid banner">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div>
+                        <h1 class="Judul" style="font-family: 'Poppins';">Tradisi Rasa: Menyajikan Kelezatan Resep
+                            Tradisional Nusantara</h1>
+                        <h5 class="tentang small"
+                            style="font-family: 'Poppins'; font-weight: 450; padding-bottom: 50px;">Sambutlah keajaiban
+                            rasa dari berbagai
+                            penjuru Nusantara di Tradisi Rasa, tempat di mana kami dengan bangga melestarikan dan
+                            membagikan resep tradisional yang telah turun-temurun. Jelajahi keunikan setiap hidangan,
+                            nikmati cerita di balik setiap racikan bumbu, dan ikut serta dalam menjaga keberlanjutan
+                            warisan kuliner kita bersama-sama. Mari bersama merayakan keanekaragaman cita rasa yang kaya
+                            dan tak terlupakan!</h5>
+                    </div>
+                    <button class="custom-btn" style="font-family: 'Poppins';">Jelajahi Resep</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="image/Mask group.png" class="img-fluid" alt="Gambar">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+
+    <section class="tipe">
+        <div>
+            <img src="image/Mask group-1.png" alt="">
+            <h5>Makasan Tradisional</h5>
+        </div>
+        <div class="d-none d-md-block">
+            <img src="image/Mask group-2.png" alt="">
+            <h5>Resep Makan Malam</h5>
+        </div>
+        <div class="d-none d-md-block">
+            <img src="image/Mask group-3.png" alt="">
+            <h5>Resep Sarapan</h5>
+        </div>
+        <div class="d-none d-md-block">
+            <img src="image/Mask group-4.png" alt="">
+            <h5>Masakan Hari Raya</h5>
+        </div>
+        <div class="d-none d-md-block">
+            <img src="image/Mask group-5.png" alt="">
+            <h5>Dessert</h5>
+        </div>
+    </section>
+
+    <!-- KerjaSama -->
+    <div class="kerjasama">
+        <p>Bekerja Sama Dengan</p>
+        <p>Kementrian Pariwisata dan Ekonomi Kreatif Republik Indonesia</p>
+        <div class="logok">
+            <a href="https://kemenparekraf.go.id/" target="_blank">
+                <img src="image/kemenparekraf.png" alt="">
+            </a>
+            <a href="#">
+                <img src="image/logo.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Carousel Resep -->
+    <div class="resep" id="resep">
+        <h1 style="text-align: center; font-size: 25px; font-weight: 600; padding-top: 5%; font-family: 'Poppins';">
+            Resep - Resep</h1>
+        <p style="text-align: center;">Sambutlah petualangan rasa yang autentik dengan koleksi resep kami, hadirkan
+            kelezatan sejati dari setiap sudut Nusantara langsung ke meja makan Anda.</p>
+        <div id="CarouselResep" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <img src="image/SateAyam.png" class="card-img" alt="Thumbnail">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sate Ayam Bumbu Kecap</h5>
+                                    <p class="card-text">Publisher: Diadit Sulaiman</p>
+                                    <p class="card-text">Sate ayam adalah hidangan Indonesia yang terdiri dari potongan
+                                        daging ayam yang ditusuk dan dibarengi dengan bumbu kecap, menciptakan kombinasi
+                                        lezat gurih dan manis.</p>
+                                    <a href="#" class="btn btn-primary">Lihat Resep</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <img src="image/Martabak.png" class="card-img" alt="Thumbnail">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Martabak Spesial Istimewa</h5>
+                                    <p class="card-text">Publisher : Princes Pragmatic</p>
+                                    <p class="card-text">Martabak merupakan sajian yang biasa ditemukan di Arab Saudi,
+                                        Yaman, India, Bangladesh, Indonesia, Malaysia, Singapura, dan Brunei.</p>
+                                    <a href="#" class="btn btn-primary">Lihat Resep</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <img src="image/Seblak.png" class="card-img" alt="Thumbnail">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seblak Mantap Kriuk Kriuk</h5>
+                                    <p class="card-text">Publisher : Bunda Nadia</p>
+                                    <p class="card-text">Seblak adalah masakan khas Sunda yang berasal dari wilayah
+                                        Parahyangan dengan cita rasa gurih dan pedas. Seblak umumnya terbuat dari
+                                        kerupuk
+                                        yang terdiri dari bawang putih dengan kencur.</p>
+                                    <a href="#" class="btn btn-primary">Lihat Resep</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#CarouselResep" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselResep" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Artikel -->
+    <section class="artikel">
+        <div class="container">
+            <h1
+                style="text-align: center; font-size: 25px; font-weight: 600; padding-top: 5%; font-family: 'Poppins'; ">
+                Artikel</h1>
+            <p style="text-align: center; font-family: 'Poppins';">Temukan inspirasi masak yang tak terbatas dengan
+                artikel kami yang penuh dengan tips, trik, dan informasi terkini tentang kuliner dari seluruh
+                Nusantara.
+            </p>
+            <!-- Artikel card -->
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/artikel-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sejarah Lapis Legit, Kue Wajib di Imlek Hasil Akulturasi Budaya
+                                Indonesia dan Belanda.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="image/artikel-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tips Nastar, Kue Kering Isi Nanas, Sajian Hari Raya yang Anti
+                                Pecah
+                                dan Lumer di Mulut!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+                    <div class="card h-100">
+                        <img src="image/artikel-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rawon : Aroma dan Kelezatan Makanan Khas Jawa Timur.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+                    <div class="card h-100">
+                        <img src="image/artikel-4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Olahan Kurma Yang Manis dan Enak Khusus Untuk Menemani Buka
+                                Puasamu !
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+                    <div class="card h-100">
+                        <img src="image/artikel-5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bahan Bahan Makanan Sehat yang Berisi Sayur Sayur yang Mudah dan
+                                Enak
+                                Dibuat.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+                    <div class="card h-100">
+                        <img src="image/artikel-6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelezatan Citarasa Rendang, Kuliner Nusantara yang Terkenal
+                                Hingga Ke
+                                Mancanegara.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="artikelain text-center" style="padding-top: 20px;">
+                <button type="button" class="btn btn-primary btn-custom">Lihat Artikel Lainnya</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FORUM -->
+    <section class="forum" id="forum">
+        <div class="headerforum">
+            <h1 style="text-align: center;">Forum</h1>
+            <p style="text-align: center;">Bergabunglah dengan komunitas kami! Bagikan resep unikmu, inspirasi kuliner,
+                dan
+                jadilah bagian dari perjalanan kulinermu yang seru bersama kami.</p>
+        </div>
+        <div class="container">
+            <div class="grid-container">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-header" style="background-color: transparent; border: none;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="image/forum-1.png" class="card-img" alt="Left Image"
+                                            style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sosis untuk bakar bakaran</h5>
+                                            <p class="card-text">Sosis yang enak, lezat, krenyes krenyes, dan gurih
+                                                enak
+                                                buat bakaran apa ya bunn? Sama bumbu yang enak buat bakar bakaran apa
+                                                yachhhh?
+                                                Soalnya kan mau tahun baru nichhh</p>
+                                            <p class="lastupdate">Diunggah 5 menit yang lalu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body profile-info">
+                                <img src="image/profilakun1.png" class="rounded-circle" alt="Profile Photo">
+                                <div class="profileakun">
+                                    <p class="mb-0" style="margin-left: 10px;">Bunda Lesty</p>
+                                    <small class="text-muted">Ibu Rumah Tangga</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="border-custom">
+                                        <button onclick="likeClicked('likeCount1')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount1">10</span>
+                                        </button>
+                                    </span>
+                                    <button class="border-custom" onclick="viewClicked()">
+                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">22
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
+                                        <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">5
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-header" style="background-color: transparent; border: none;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="image/forum-2.png" class="card-img" alt="Left Image"
+                                            style="object-fit: cover; object-position: center; width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Saran resep masakan autentik</h5>
+                                            <p class="card-text">Saya ingin memasak hidangan tradisional autentik untuk
+                                                momen istimewa dengan keluarga, tetapi saya bingung memilih resep dan
+                                                bumbu yang tepat. Ada saran untuk hidangan tradisional yang bisa saya
+                                                coba.....</p>
+                                            <p class="lastupdate">Diunggah 19 menit yang lalu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body profile-info">
+                                <img src="image/profilakun2.png" class="rounded-circle" alt="Profile Photo">
+                                <div class="profileakun">
+                                    <p class="mb-0" style="margin-left: 10px;">Mami Indah</p>
+                                    <small class="text-muted">Ibu Rumah Tangga</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="border-custom">
+                                        <button onclick="likeClicked('likeCount2')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount2">10</span>
+                                        </button>
+                                    </span>
+                                    <button class="border-custom" onclick="viewClicked()">
+                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">19
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
+                                        <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">10
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 (No Thumbnail Image) -->
+                <div class="col d-none d-md-block">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Menu Hari Lebaran: Rendang Medium Rare</h5>
+                                <p class="card-text">Saya memasak rendang untuk menu lebaran, baiknya saya presto dahulu
+                                    atau saya buat medium rare?</p>
+                                <p class="lastupdate">Diunggah 30 menit yang lalu</p>
+                            </div>
+                            <div class="card-body profile-info">
+                                <img src="image/profilakun3.png" class="rounded-circle" alt="Profile Photo">
+                                <div class="profileakun">
+                                    <p class="mb-0" style="margin-left: 10px;">Ibu Septi</p>
+                                    <small class="text-muted">Ibu Rumah Tangga</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="border-custom">
+                                        <button onclick="likeClicked('likeCount3')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount3">10</span>
+                                        </button>
+                                    </span>
+                                    <button class="border-custom" onclick="viewClicked()">
+                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">12
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
+                                        <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">4
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 (No Thumbnail Image) -->
+                <div class="col d-none d-md-block">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Bagaimana tips Memasak</h5>
+                                <p class="card-text">Saya hanya punya panci 32 inc, tapi mau buat kepala kerbau, apakah
+                                    itu bisa?</p>
+                                <p class="lastupdate">Diunggah 12 menit yang lalu</p>
+                            </div>
+                            <div class="card-body profile-info">
+                                <img src="image/profilakun4.png" class="rounded-circle" alt="Profile Photo">
+                                <!-- Tambahkan foto profil -->
+                                <div class="profileakun">
+                                    <p class="mb-0" style="margin-left: 10px;">Hendriyatno</p>
+                                    <small class="text-muted">Mahasiswa 2 digit</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <span class="border-custom">
+                                        <button onclick="likeClicked('likeCount4')">
+                                            <img src="image/like.png" alt="" style="width: 15px; height: 12px;"><span
+                                                id="likeCount4">10</span>
+                                        </button>
+                                    </span>
+                                    <button class="border-custom" onclick="viewClicked()">
+                                        <img src="image/view.png" alt="" style="width: 15px; height: 12px;">17
+                                    </button>
+                                    <button class="border-custom" onclick="commentClicked()">
+                                        <img src="image/comment.png" alt="" style="width: 14px; height: 12px;">12
+                                    </button>
+                                </div>
+                                <script>
+                                    // Your JavaScript code
+                                    let likeCounts = {
+                                        likeCount1: 10,
+                                        likeCount2: 10,
+                                        likeCount3: 10,
+                                        likeCount4: 10
+                                    };
+
+                                    function likeClicked(elementId) {
+                                        likeCounts[elementId]++; // Increment like count
+                                        document.getElementById(elementId).innerText = likeCounts[elementId]; // Update like count display
+                                    }
+
+                                    function viewClicked() {
+                                        // Your viewClicked function
+                                    }
+
+                                    function commentClicked() {
+                                        // Your commentClicked function
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forumlain text-center" style="padding-top: 20px; padding-bottom: 20px;">
+                <button type="button" class="btn btn-primary btn-custom" onclick="redirectToForumPage()">Forum
+                    Lainnya</button>
+            </div>
+
+            <script>
+                // JavaScript function to redirect to forum.html page
+                function redirectToForumPage() {
+                    window.location.href = 'forum.html'; // Mengarahkan ke halaman forum.html
+                }
+            </script>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="tradisirasafooter">
+                <h3>Tradisi Rasa</h3>
+                <div class="deskripsi">
+                    <img src="image/logo-footer.png" alt="Logo Tradisi Rasa">
+                    <p class="text-break">Bergabunglah dalam perjalanan memasak yang memperkaya di forum kami, di
+                        mana
+                        resep-resep terbaik bermuara pada satu cita rasa: tradisional.</p>
+                </div>
+            </div>
+            <div class="sitemap">
+                <h3>Site Map</h3>
+                <div class="sitemapk">
+                    <ul class="nostyle">
+                        <li><a href="#">Favorit</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li><a href="#">Resep</a></li>
+                        <li><a href="#">Unggah Resep</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socmed">
+                <h3>Social Media</h3>
+                <ul class="nostyle">
+                    <li><a href="#"> <img src="image/facebookicon.png" alt="Facebook Icon">Tradisi Rasa</a></li>
+                    <li><a href="#"> <img src="image/igicon.png" alt="Instagram Icon">Tradisi.Rasa</a></li>
+                    <li><a href="#"><img src="image/youtubeicon.png" alt="Youtube Icon">Tradisi Rasa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <p>All Right Reserved</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

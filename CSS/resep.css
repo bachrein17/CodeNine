@@ -1,1 +1,702 @@
 /*test*/
+.judul h2
+{
+    font-family: 'Poppins';
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 77px;
+}
+.judul p
+{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*cards*/
+.help.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+  }
+  .help .section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .help .heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 48px auto 0px;
+    width: 1043px;
+    height: 243px;
+    min-height: 243px;
+  }
+  .help .medium_title {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 204px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 1043px;
+    height: 39px;
+    font: 600 26px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .paragraph {
+    position: absolute;
+    top: 52px;
+    right: 204px;
+    bottom: 148px;
+    left: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 635px;
+    height: 43px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .selectedbutton {
+    position: absolute;
+    top: 198px;
+    right: 734px;
+    bottom: 0px;
+    left: 162px;
+    width: 147px;
+    height: 45px;
+    border-radius: 22.5px 22.5px 22.5px 22.5px;
+  }
+  .help .text {
+    position: absolute;
+    top: 210px;
+    right: 761px;
+    bottom: 12px;
+    left: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 92px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: #f8f8f8;
+    text-align: center;
+  }
+  .help .paragraph1 {
+    position: absolute;
+    top: 210px;
+    right: 638px;
+    bottom: 12px;
+    left: 362px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 43px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .paragraph2 {
+    position: absolute;
+    top: 210px;
+    right: 366px;
+    bottom: 12px;
+    left: 622px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 55px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .paragraph3 {
+    position: absolute;
+    top: 210px;
+    right: 506px;
+    bottom: 12px;
+    left: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 47px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .searchbar {
+    position: absolute;
+    top: 111px;
+    right: 171px;
+    bottom: 63px;
+    left: 169px;
+    width: 703px;
+    height: 69px;
+    background-color: #f8f8f8;
+    border-radius: 10px 10px 10px 10px;
+    outline: 1px solid #ffa800;
+    outline-offset: -1px;
+  }
+  .help .paragraph4 {
+    position: absolute;
+    top: 135px;
+    right: 759px;
+    bottom: 87px;
+    left: 185px;
+    display: flex;
+    align-items: flex-end;
+    width: 99px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .wrapper1 {
+    position: absolute;
+    top: 137px;
+    right: 187px;
+    bottom: 88px;
+    left: 838px;
+    width: 18px;
+    height: 18px;
+  }
+  .help .filterbutton {
+    position: absolute;
+    top: 198px;
+    right: 162px;
+    bottom: 0px;
+    left: 730px;
+    width: 151px;
+    height: 45px;
+    border-radius: 22.5px 22.5px 22.5px 22.5px;
+  }
+  .help .text2 {
+    position: absolute;
+    right: 212px;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 33px;
+    height: 21px;
+    font: 400 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+  }
+  .help .image18 {
+    position: absolute;
+    right: 250px;
+    bottom: 17px;
+    width: 12px;
+    height: 12px;
+  }
+  .help .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .help .cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 21px auto 0px;
+    width: 1190px;
+    height: 1442px;
+    min-height: 1442px;
+  }
+  .help .card_1 {
+    position: absolute;
+    top: 0px;
+    right: 817px;
+    bottom: 978px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .rect {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 373px;
+    height: 464px;
+    background-color: #f8f8f8;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 12px 7.0999999046px -10px rgba(0, 0, 0, 0.0980392157);
+  }
+  .help .foto_makanan {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 343px;
+  }
+  .help .foto_makanan1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 343px; 
+    height: 343px;
+    height: -moz-fit-content;
+    background: var(--src) center center/100% 100% no-repeat;
+    aspect-ratio: 1;
+  }
+  .help .image7 {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 48px;
+    height: 48px;
+  }
+  .help .porsi_button {
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    width: 101px;
+    height: 27px;
+    border-radius: 13.5px 13.5px 13.5px 13.5px;
+    outline: 1px solid #ffa800;
+    outline-offset: -1px;
+  }
+  .help .porsi_icon {
+    position: absolute;
+    bottom: 76px;
+    left: 31px;
+    width: 17px;
+    height: 13px;
+  }
+  .help .info {
+    position: absolute;
+    bottom: 74px;
+    left: 62px;
+    display: flex;
+    align-items: flex-end;
+    width: 37px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .waktu_button {
+    position: absolute;
+    bottom: 70px;
+    left: 136px;
+    width: 117px;
+    height: 27px;
+    border-radius: 13.5px 13.5px 13.5px 13.5px;
+    outline: 1px solid #ffa800;
+    outline-offset: -1px;
+  }
+  .help .waktu_icon {
+    position: absolute;
+    bottom: 76px;
+    left: 156px;
+    width: 16px;
+    height: 16px;
+  }
+  .help .info1 {
+    position: absolute;
+    bottom: 74px;
+    left: 180px;
+    display: flex;
+    align-items: flex-end;
+    width: 52px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_resep {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 116px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 127px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_2 {
+    position: absolute;
+    top: 0px;
+    right: 409px;
+    bottom: 978px;
+    left: 408px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .wrapper5 {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1;
+  }
+  .help .info2 {
+    position: absolute;
+    bottom: 74px;
+    left: 62px;
+    display: flex;
+    align-items: flex-end;
+    width: 41px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .info3 {
+    position: absolute;
+    bottom: 74px;
+    left: 189px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 35px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .help .nama_resep1 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 105px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher1 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 190px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 978px;
+    left: 817px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .nama_resep2 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 102px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher2 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 125px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_4 {
+    position: absolute;
+    top: 489px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .image9 {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0px 12px 7.0999999046px rgba(0, 0, 0, 0.098));
+  }
+  .help .info4 {
+    position: absolute;
+    bottom: 74px;
+    left: 180px;
+    display: flex;
+    align-items: flex-end;
+    width: 53px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_resep3 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 221px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher3 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 164px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_5 {
+    position: absolute;
+    top: 489px;
+    right: 409px;
+    bottom: 489px;
+    left: 408px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .nama_resep4 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 101px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher4 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 212px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_6 {
+    position: absolute;
+    top: 489px;
+    right: 0px;
+    bottom: 489px;
+    left: 817px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .nama_resep5 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 92px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher5 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 136px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_7 {
+    position: absolute;
+    top: 978px;
+    right: 817px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .nama_publisher6 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 210px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_8 {
+    position: absolute;
+    bottom: 0px;
+    left: 408px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .info5 {
+    position: absolute;
+    bottom: 74px;
+    left: 180px;
+    display: flex;
+    align-items: flex-end;
+    width: 35px;
+    height: 18px;
+    font: 600 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_resep6 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 114px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher7 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 143px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .card_9 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 464px;
+  }
+  .help .nama_resep7 {
+    position: absolute;
+    bottom: 42px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 161px;
+    height: 21px;
+    font: 600 14px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+  .help .nama_publisher8 {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: 126px;
+    height: 18px;
+    font: 400 12px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: black;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #FF2525;
+    padding: 30px 0;
+    color: white;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .tradisirasafooter,
+  .sitemap,
+  .socmed {
+    flex-basis: 30%;
+  }
+  .tradisirasafooter img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  .sitemap .ul2 {
+    padding-left: 10px;
+  }
+  .sitemap ul,
+  .socmed ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sitemap li,
+  .socmed li {
+    margin-bottom: 5px;
+  }
+    .socmed img {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+  .footer2 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

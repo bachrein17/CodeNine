@@ -214,6 +214,7 @@
     width: 1190px;
     height: 1442px;
     min-height: 1442px;
+    margin-bottom: 41px;
   }
   .help .card_1 {
     position: absolute;

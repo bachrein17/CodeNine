@@ -69,6 +69,11 @@
   margin-top: 10px;
 }
 
+.datauser .btn-primary:hover {
+  background-image: linear-gradient(to right, rgb(248, 182, 59), rgb(245, 63, 63)); /* Mengubah arah gradien saat hover */
+  transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+}
+
 footer {
   background-color: #ff2525;
   padding: 30px 0;
@@ -172,4 +177,23 @@ footer .container {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+.datauser .form-control {
+  border: 2px solid #FF2525; 
+  color: #FF2525; 
+}
+
+.datauser .form-control:focus {
+  border: 2px solid #fa4545; 
+  color: #FF2525; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); 
+}
+
+.datauser .form-label{
+  font-family: 'Poppins';
+  font-weight: 400px;
+}
+.datauser form{
+  padding-bottom: 50px;
 }

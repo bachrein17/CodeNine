@@ -58,7 +58,6 @@
                         <span>Password</span>
                         <input type="password" id="passwordInput" placeholder="Masukan Password" required>
                     </div>
-                    <!-- Tombol Sign Up yang memicu modal -->
                     <div class="inputbx text-center" style="padding-top: 20px;">
                         <button type="button" class="btn btn-primary btn-custom" data-toggle="modal"
                             data-target="#signupModal">Sign Up</button>
@@ -75,8 +74,7 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <!-- Modal pertama (untuk memasukkan kode verifikasi) -->
+
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -104,11 +102,9 @@
                         </div>
                         <script>
                             function moveToNext(currentInput, nextInputID) {
-                                // Jika nilai dalam kotak input saat ini terisi
+
                                 if (currentInput.value) {
-                                    // Dapatkan elemen input berikutnya berdasarkan ID
                                     var nextInput = document.getElementById(nextInputID);
-                                    // Jika elemen input berikutnya ditemukan, fokuskan padanya
                                     if (nextInput) {
                                         nextInput.focus();
                                     }
@@ -119,7 +115,6 @@
                     </div>
                 </div>
                 <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
-                    <!-- Ganti onclick -->
                     <button type="button" class="btn btn-primary" onclick="redirectToSuccessModal()">Konfirmasi</button>
                 </div>
 
@@ -128,7 +123,7 @@
     </div>
 
 
-    <!-- Modal kedua (untuk menampilkan pesan verifikasi berhasil) -->
+
     <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
         aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

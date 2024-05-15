@@ -315,11 +315,10 @@ small {
     gap: 10px;
 }
 
-/* Media query untuk layar kecil */
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        /* 1 kolom */
+       
     }
 }
 
@@ -542,7 +541,6 @@ footer .container {
     text-align: center;
     width: 100%;
     font-weight: 400;
-    padding-bottom: 100px;
     font-family: 'Poppins';
 }
 
@@ -600,7 +598,6 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15%;
     padding-bottom: 10px;
 }
 
@@ -714,6 +711,7 @@ footer .container {
 
     .halogin .contentbx .formbx {
         width: 100%;
+        height: 100%;
         border-radius: 5%;
         padding: 40px;
         background: rgba(255, 255, 255, 0.8);

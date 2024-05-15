@@ -33,7 +33,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -47,7 +46,9 @@
 
 .halogin .contentbx .formbx {
     width: 80%;
-    padding: 0 20px; /* Added padding */
+    height: 100%;
+    padding: 0 20px;
+
 }
 
 .halogin .contentbx .formbx h2 {

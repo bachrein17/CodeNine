@@ -81,9 +81,9 @@
     <div class="container">
         <div class="upload">
             <label for="fileUpload" style="padding-bottom: 20px;">
+                <input type="file" id="fileUpload" class="file-input" accept="image/*">
                 <img id="gambarDetailResep" src="image/unggahdisini.png" alt="upload resep"/>
             </label>
-            <input type="file" id="fileUpload" class="file-input" accept="image/*">
             <form>
                 <div class="nmasakan">
                     <label class="form-label">Nama Masakanmu</label>
@@ -94,11 +94,11 @@
                     <textarea id="deskripsiResep" class="deskripsi-resep"
                         placeholder="Deskripsikan cerita menarik tentang resepmu"></textarea>
                 </div>
-                <label for="fileUpload" class="btn btn-primary">
+                <label for="fileUpload2" class="btn btn-primary">
+                    <input type="file" id="fileUpload2" class="file-input" />
                     <img src="image/uploadicon.png" alt="Upload Icon" class="button-icon" />
                     Unggah foto masakanmu
                 </label>
-                <input type="file" id="file-upload" class="file-input" />
             </form>
         </div>
     </div>
@@ -111,43 +111,121 @@
             gambarDetailResep.src = imageURL;
         });
     </script>
-</body>
-<footer>
-    <div class="container">
-        <div class="tradisirasafooter">
-            <h3>Tradisi Rasa</h3>
-            <div class="deskripsi">
-                <img src="image/logo-footer.png" alt="Logo Tradisi Rasa">
-                <p class="text-break">Bergabunglah dalam perjalanan memasak yang memperkaya di forum kami, di
-                    mana
-                    resep-resep terbaik bermuara pada satu cita rasa: tradisional.</p>
-            </div>
+    <div class="rincian">
+        <h2>Masukan Rincian Bahan</h2>
+        <div class="bahan">
+            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
+            <img src="image/tambahdetail.png" alt="">
+            <img src="image/kurangdetail.png" alt="">
+            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
+            <img src="image/tambahdetail.png" alt="">
+            <img src="image/kurangdetail.png" alt="">
+            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
+            <img src="image/tambahdetail.png" alt="">
+            <img src="image/kurangdetail.png" alt="">
         </div>
-        <div class="sitemap">
-            <h3>Site Map</h3>
-            <div class="sitemapk">
-                <ul class="nostyle">
-                    <li><a href="#">Favorit</a></li>
-                    <li><a href="forum.html">Forum</a></li>
-                </ul>
-                <ul class="ul2">
-                    <li><a href="#">Resep</a></li>
-                    <li><a href="#">Unggah Resep</a></li>
-                </ul>
+        <div class="dropdown">
+            <div class="banyaksaji">
+                <h3>Banyak Sajian</h3>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Another action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here 1</a></li>
+                    </ul>
+                </div>              
             </div>
-        </div>
-        <div class="socmed">
-            <h3>Social Media</h3>
-            <ul class="nostyle">
-                <li><a href="#"> <img src="image/facebookicon.png" alt="Facebook Icon">Tradisi Rasa</a></li>
-                <li><a href="#"> <img src="image/igicon.png" alt="Instagram Icon">Tradisi.Rasa</a></li>
-                <li><a href="#"><img src="image/youtubeicon.png" alt="Youtube Icon">Tradisi Rasa</a></li>
-            </ul>
+            <div class="waktu">
+                <h3>Waktu Memasak</h3>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Another action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here 2</a></li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="kategori">
+                <h3>Kategori</h3>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                        <li><a class="dropdown-item" href="#">Another action 3</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here 3</a></li>
+                    </ul>
+                </div>              
+            </div>
         </div>
     </div>
-</footer>
-<footer class="footer2">
-    <p>All Right Reserved</p>
-</footer>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault(); // Untuk mencegah redirect jika link memiliki href
+                    const dropdown = item.closest('.dropdown');
+                    const dropdownButton = dropdown.querySelector('.dropdown-toggle');
+                    dropdownButton.textContent = item.textContent;
+                });
+            });
+        });
+    </script>
+    <div class="caramasak">
+        <img src="image/unggahdisini.png" alt="">
+        <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
+        <img src="image/tambahdetail.png" alt="">
+        <img src="image/kurangdetail.png" alt="">
+    </div>
+    <div class="tanda"></div>
+    <div class="done">
+        <button>tag berjualan</button>
+        <button>unggah resep</button>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="tradisirasafooter">
+                <h3>Tradisi Rasa</h3>
+                <div class="deskripsi">
+                    <img src="image/logo-footer.png" alt="Logo Tradisi Rasa">
+                    <p class="text-break">Bergabunglah dalam perjalanan memasak yang memperkaya di forum kami, di mana
+                        resep-resep terbaik bermuara pada satu cita rasa: tradisional.</p>
+                </div>
+            </div>
+            <div class="sitemap">
+                <h3>Site Map</h3>
+                <div class="sitemapk">
+                    <ul class="nostyle">
+                        <li><a href="#">Favorit</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li><a href="#">Resep</a></li>
+                        <li><a href="#">Unggah Resep</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socmed">
+                <h3>Social Media</h3>
+                <ul class="nostyle">
+                    <li><a href="#"> <img src="image/facebookicon.png" alt="Facebook Icon">Tradisi Rasa</a></li>
+                    <li><a href="#"> <img src="image/igicon.png" alt="Instagram Icon">Tradisi.Rasa</a></li>
+                    <li><a href="#"><img src="image/youtubeicon.png" alt="Youtube Icon">Tradisi Rasa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <p>All Right Reserved</p>
+    </footer>
+</body>
 </html>

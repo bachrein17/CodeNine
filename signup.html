@@ -123,7 +123,6 @@
     </div>
 
 
-
     <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
         aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -149,21 +148,17 @@
 
     <script>
         function redirectToHomepage() {
-            // Redirect ke homepage
             window.location.href = "homepage.html";
         }
     </script>
 
     <script>
         function redirectToSuccessModal() {
-            // Sembunyikan modal pertama
             $('#signupModal').modal('hide');
-            // Tampilkan modal kedua
             $('#verificationSuccessModal').modal('show');
         }
     </script>
 
-    <!-- Tambahkan JavaScript Bootstrap dan jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

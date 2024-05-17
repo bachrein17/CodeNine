@@ -17,7 +17,7 @@
 }
 
 .upload img {
-    width: 400px; 
+    width: 299px; 
     height: auto; 
     border-radius: 5px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
@@ -104,3 +104,56 @@
 .file-input {
     display: none;
 }
+
+.bahan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bahannya {
+    flex: 1;
+    width: 50%;
+    margin-right: 50px; 
+}
+
+
+#kurang.action-button{
+    padding-left: 10px;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+}
+
+
+.dropdown {
+    display: flex;
+}
+.dropdown a {
+    width: 200px;
+    text-align: start;
+}
+
+.banyaksaji{
+    padding-right: 10px;
+}
+
+.waktu, .kategori{
+    padding: 0 10px;
+}
+
+/* Mengubah warna latar belakang dropdown menu */
+.dropdown-menu {
+    background-color: #fa0000; /* Ganti dengan warna yang Anda inginkan */
+}
+
+/* Mengubah warna teks dan hover pada dropdown-item */
+.dropdown-item {
+    color: #ff0000; /* Ganti dengan warna teks yang Anda inginkan */
+}
+
+.dropdown-item:hover {
+    background-color: #ff0000; /* Ganti dengan warna hover yang Anda inginkan */
+}
+

@@ -22,7 +22,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="homepage.html" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="homepage.html" style="padding-left: 5%;"><img src="image/logo.png"
+                    alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,14 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="homepage.html" onclick="closeNavbar()">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="homepage.html"
+                            onclick="closeNavbar()">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="forum.html"
                             onclick="closeNavbar()">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="resep.html" onclick="closeNavbar()">Resep</a>
+                        <a class="nav-link active" aria-current="page" href="resep.html"
+                            onclick="closeNavbar()">Resep</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="favorit.html"
@@ -68,6 +71,7 @@
         </script>
     </nav>
 
+    <!-- Header -->
     <div class="back">
         <a href="uploadresep.html">
             <img src="image/back.png" alt="">
@@ -82,7 +86,7 @@
         <div class="upload">
             <label for="fileUpload" style="padding-bottom: 20px;">
                 <input type="file" id="fileUpload" class="file-input" accept="image/*">
-                <img id="gambarDetailResep" src="image/unggahdisini.png" alt="upload resep"/>
+                <img id="gambarDetailResep" src="image/unggahdisini.png" alt="upload resep" />
             </label>
             <form>
                 <div class="nmasakan">
@@ -101,95 +105,184 @@
                 </label>
             </form>
         </div>
-    </div>
-    <script>
-        const fileUpload = document.getElementById("fileUpload");
-        fileUpload.addEventListener("change", function(event) {
-            const file = event.target.files[0];
-            const imageURL = URL.createObjectURL(file);
-            const gambarDetailResep = document.getElementById("gambarDetailResep");
-            gambarDetailResep.src = imageURL;
-        });
-    </script>
-    <div class="rincian">
-        <h2>Masukan Rincian Bahan</h2>
-        <div class="bahan">
-            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
-            <img src="image/tambahdetail.png" alt="">
-            <img src="image/kurangdetail.png" alt="">
-            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
-            <img src="image/tambahdetail.png" alt="">
-            <img src="image/kurangdetail.png" alt="">
-            <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
-            <img src="image/tambahdetail.png" alt="">
-            <img src="image/kurangdetail.png" alt="">
+        <script>
+            const fileUpload = document.getElementById("fileUpload");
+            fileUpload.addEventListener("change", function (event) {
+                const file = event.target.files[0];
+                const imageURL = URL.createObjectURL(file);
+                const gambarDetailResep = document.getElementById("gambarDetailResep");
+                gambarDetailResep.src = imageURL;
+            });
+        </script>
+
+
+        <!-- Rincian Bahan -->
+        <div class="rincian">
+            <h2>Masukan Rincian Bahan</h2>
+            <div class="bahan">
+                <input type="text" class="bahannya" placeholder="Contoh: 2sdm Garam">
+                <div class="img-container">
+                    <img src="image/tambahdetail.png" alt="Tambah" class="action-button" id="tambah">
+                    <img src="image/kurangdetail.png" alt="Kurang" class="action-button" id="kurang">
+                </div>
+            </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const rincianDiv = document.querySelector('.rincian');
+                const tambahButton = document.getElementById('tambah');
+                const kurangButton = document.getElementById('kurang');
+
+                function tambahBahan() {
+                    const newBahanDiv = document.createElement('div');
+                    newBahanDiv.classList.add('bahan');
+
+                    const newInput = document.createElement('input');
+                    newInput.type = 'text';
+                    newInput.classList.add('bahannya');
+                    newInput.placeholder = 'Contoh: 2sdm Garam';
+
+                    const newImgContainer = document.createElement('div');
+                    newImgContainer.classList.add('img-container');
+
+                    const newTambahImg = document.createElement('img');
+                    newTambahImg.src = 'image/tambahdetail.png';
+                    newTambahImg.alt = 'Tambah';
+                    newTambahImg.classList.add('action-button');
+                    newTambahImg.id = 'tambah';
+                    // Tambah event listener ke gambar tambah baru
+                    newTambahImg.addEventListener('click', tambahBahan);
+
+                    const newKurangImg = document.createElement('img');
+                    newKurangImg.src = 'image/kurangdetail.png';
+                    newKurangImg.alt = 'Kurang';
+                    newKurangImg.classList.add('action-button');
+                    newKurangImg.id = 'kurang'; // Tetapkan id 'kurang' pada gambar kurang baru
+                    // Tambah event listener ke gambar kurang baru
+                    newKurangImg.addEventListener('click', () => {
+                        rincianDiv.removeChild(newBahanDiv);
+                    });
+
+                    newImgContainer.appendChild(newTambahImg);
+                    newImgContainer.appendChild(newKurangImg);
+
+                    newBahanDiv.appendChild(newInput);
+                    newBahanDiv.appendChild(newImgContainer);
+
+                    rincianDiv.appendChild(newBahanDiv);
+
+                    // Tambah event listener untuk mendeteksi tombol enter pada input baru
+                    newInput.addEventListener('keypress', (event) => {
+                        if (event.key === 'Enter') {
+                            tambahBahan();
+                        }
+                    });
+
+                    // Kembali beri fokus pada input setelah menambahkan bahan
+                    newInput.focus();
+                }
+
+                // Tambah event listener untuk tombol tambah
+                tambahButton.addEventListener('click', tambahBahan);
+
+                // Tambah event listener untuk tombol kurang
+                kurangButton.addEventListener('click', () => {
+                    const bahanDivs = document.querySelectorAll('.bahan');
+                    if (bahanDivs.length > 1) {
+                        rincianDiv.removeChild(bahanDivs[bahanDivs.length - 1]);
+                    }
+                });
+
+                // Event listener untuk mendeteksi tombol enter pada input pertama
+                const firstInput = document.querySelector('.bahannya');
+                firstInput.addEventListener('keypress', (event) => {
+                    if (event.key === 'Enter') {
+                        tambahBahan();
+                    }
+                });
+            });
+
+        </script>
+
+
         <div class="dropdown">
             <div class="banyaksaji">
                 <h3>Banyak Sajian</h3>
                 <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        1 - 5 Porsi
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action 1</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 1</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here 1</a></li>
+                        <li><a class="dropdown-item" href="#">1 Porsi</a></li>
+                        <li><a class="dropdown-item" href="#">2 Porsi</a></li>
+                        <li><a class="dropdown-item" href="#">3 Porsi</a></li>
+                        <li><a class="dropdown-item" href="#">4 Porsi</a></li>
+                        <li><a class="dropdown-item" href="#">5 Porsi</a></li>
                     </ul>
-                </div>              
+                </div>
             </div>
             <div class="waktu">
                 <h3>Waktu Memasak</h3>
                 <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Berapa Menit ?
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">Action 2</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 2</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here 2</a></li>
+                        <li><a class="dropdown-item" href="#">5 Menit</a></li>
+                        <li><a class="dropdown-item" href="#">10 Menit </a></li>
+                        <li><a class="dropdown-item" href="#">20 Menit</a></li>
+                        <li><a class="dropdown-item" href="#">30 Menit</a></li>
+                        <li><a class="dropdown-item" href="#">40 Menit</a></li>
+                        <li><a class="dropdown-item" href="#">60 Menit</a></li>
                     </ul>
-                </div>              
+                </div>
             </div>
             <div class="kategori">
                 <h3>Kategori</h3>
                 <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton3"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Termasuk kategori?
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                        <li><a class="dropdown-item" href="#">Action 3</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 3</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here 3</a></li>
+                        <li><a class="dropdown-item" href="#">Camilan</a></li>
+                        <li><a class="dropdown-item" href="#">Takjil</a></li>
+                        <li><a class="dropdown-item" href="#">Makan Malam</a></li>
                     </ul>
-                </div>              
+                </div>
             </div>
         </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const dropdownItems = document.querySelectorAll('.dropdown-item');
-            
-            dropdownItems.forEach(item => {
-                item.addEventListener('click', (e) => {
-                    e.preventDefault(); // Untuk mencegah redirect jika link memiliki href
-                    const dropdown = item.closest('.dropdown');
-                    const dropdownButton = dropdown.querySelector('.dropdown-toggle');
-                    dropdownButton.textContent = item.textContent;
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+                dropdownItems.forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        e.preventDefault(); // Untuk mencegah redirect jika link memiliki href
+                        const dropdown = item.closest('.dropdown');
+                        const dropdownButton = dropdown.querySelector('.dropdown-toggle');
+                        dropdownButton.textContent = item.textContent;
+                    });
                 });
             });
-        });
-    </script>
-    <div class="caramasak">
-        <img src="image/unggahdisini.png" alt="">
-        <input type="text" class="nama-resep" placeholder="Ketik nama masakanmu" />
-        <img src="image/tambahdetail.png" alt="">
-        <img src="image/kurangdetail.png" alt="">
-    </div>
-    <div class="tanda"></div>
-    <div class="done">
-        <button>tag berjualan</button>
-        <button>unggah resep</button>
+        </script>
+        <div class="caramasak">
+            <label for="fileUpload" class="upload" style="padding-bottom: 20px;">
+                <input type="file" id="fileUpload" class="file-input" accept="image/*">
+                <img id="gambarDetailResep" src="image/unggahdisini.png" alt="upload resep" />
+            </label>
+            <input type="text" class="" placeholder="Contoh: 2sdm Garam" />
+            <img src="image/tambahdetail.png" alt="">
+            <img src="image/kurangdetail.png" alt="">
+        </div>
+        <div class="tanda"></div>
+        <div class="done">
+            <button>tag berjualan</button>
+            <button>unggah resep</button>
+        </div>
     </div>
     <footer>
         <div class="container">
@@ -228,4 +321,5 @@
         <p>All Right Reserved</p>
     </footer>
 </body>
+
 </html>

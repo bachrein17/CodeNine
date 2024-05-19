@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/signup.css">
-    <!-- Tambahkan CSS Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Sign Up</title>
 </head>
 
@@ -24,43 +21,42 @@
             <div class="formbx">
                 <h2>Sign Up</h2>
                 <p>Silahkan Isi kolom dibawah untuk mendaftar</p>
-                <form>
+                <form action="http://localhost:3000/signup" method="post">
                     <div class="inputbx">
                         <span>Nama Lengkap</span>
-                        <input type="text" placeholder="Masukan Nama Lengkap" required>
+                        <input type="text" name="namaLengkap" placeholder="Masukan Nama Lengkap" required>
                     </div>
                     <div class="inputbx">
                         <span>Email</span>
-                        <input type="text" placeholder="Masukan Username atau Email" required>
+                        <input type="email" name="email" placeholder="Masukan Email" required>
                     </div>
                     <div class="inputbx">
                         <p style="text-align: left; margin-bottom: 10px; margin-right: 10px;">Role</p>
                         <div class="checkbox-options">
                             <div class="form-check">
-                                <input type="checkbox" id="kokiRole" name="role" value="koki">
+                                <input type="radio" id="kokiRole" name="role" value="koki" required>
                                 <label for="kokiRole" class="form-check-label">Koki</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" id="umkmRole" name="role" value="umkm">
+                                <input type="radio" id="umkmRole" name="role" value="umkm" required>
                                 <label for="umkmRole" class="form-check-label">UMKM</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" id="ibuRumahTanggaRole" name="role" value="ibuRumahTangga">
+                                <input type="radio" id="ibuRumahTanggaRole" name="role" value="ibuRumahTangga" required>
                                 <label for="ibuRumahTanggaRole" class="form-check-label">Ibu Rumah Tangga</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" id="lainnyaRole" name="role" value="lainnya">
+                                <input type="radio" id="lainnyaRole" name="role" value="lainnya" required>
                                 <label for="lainnyaRole" class="form-check-label">Lainnya</label>
                             </div>
                         </div>
                     </div>
                     <div class="inputbx">
                         <span>Password</span>
-                        <input type="password" id="passwordInput" placeholder="Masukan Password" required>
+                        <input type="password" name="password" id="passwordInput" placeholder="Masukan Password" required>
                     </div>
                     <div class="inputbx text-center" style="padding-top: 20px;">
-                        <button type="button" class="btn btn-primary btn-custom" data-toggle="modal"
-                            data-target="#signupModal">Sign Up</button>
+                        <button type="submit" class="btn btn-primary btn-custom">Sign Up</button>
                     </div>
                 </form>
                 <ul class="sci">
@@ -74,9 +70,7 @@
         </div>
     </section>
 
-
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;">
@@ -90,19 +84,14 @@
                     <p>Masukkan kode verifikasi yang telah dikirimkan ke alamat email anda.</p>
                     <div class="form-group verification-code">
                         <div class="verification-inputs">
-                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')"
-                                pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')"
-                                pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')"
-                                pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')"
-                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')" pattern="[0-9]" required>
                             <input type="text" maxlength="1" id="input5" pattern="[0-9]" required>
                         </div>
                         <script>
                             function moveToNext(currentInput, nextInputID) {
-
                                 if (currentInput.value) {
                                     var nextInput = document.getElementById(nextInputID);
                                     if (nextInput) {
@@ -117,14 +106,11 @@
                 <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
                     <button type="button" class="btn btn-primary" onclick="redirectToSuccessModal()">Konfirmasi</button>
                 </div>
-
             </div>
         </div>
     </div>
 
-
-    <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
-        aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
+    <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog" aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -139,8 +125,7 @@
                     <p>Selamat menjelajahi tradisi rasa anda.</p>
                 </div>
                 <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"
-                        onclick="redirectToHomepage()">Homepage</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="redirectToHomepage()">Homepage</button>
                 </div>
             </div>
         </div>
@@ -150,9 +135,7 @@
         function redirectToHomepage() {
             window.location.href = "homepage.html";
         }
-    </script>
 
-    <script>
         function redirectToSuccessModal() {
             $('#signupModal').modal('hide');
             $('#verificationSuccessModal').modal('show');

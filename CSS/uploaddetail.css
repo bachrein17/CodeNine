@@ -120,7 +120,7 @@
 }
 
 .bahan input {
-    border: 1px solid #FF0000;
+    border: 1px solid #FF2525;
     border-radius: 5px;
     color: red;
     padding: 10px;
@@ -207,7 +207,7 @@
 }
 
 .caramasak input {
-    border: 1px solid #FF0000;
+    border: 1px solid #FF2525;
     width: 100%;
     border-radius: 5px;
     color: red;
@@ -231,7 +231,7 @@
 }
 
 .tag-container {
-    border: 1px solid #ff0000;
+    border: 1px solid #FF2525;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -251,7 +251,7 @@
     margin-bottom: 5px;
     display: inline-block;
     font-size: 14px;
-    border: 1px solid #ff0000;
+    border: 1px solid #FF2525;
     border-radius: 20px;
 }
 
@@ -285,8 +285,8 @@
 
 .buttonunggah .tag-button {
     background-color: transparent; /* Latar belakang transparan */
-    border: 2px solid #FF0000; /* Border merah 2px */
-    color: #FF0000; /* Warna teks merah */
+    border: 2px solid #FF2525; /* Border merah 2px */
+    color: #FF2525; /* Warna teks merah */
     padding: 10px 50px;
     margin: 10px; 
     border-radius: 20px;
@@ -295,7 +295,7 @@
 }
 
 .buttonunggah .tag-button:hover {
-    border: 1px solid #FF0000; /* Border merah 2px */
+    border: 1px solid #FF2525; /* Border merah 2px */
     background-color: #FF6347; /* Warna latar belakang saat dihover */
     color: white; /* Warna teks menjadi putih saat dihover */
 }

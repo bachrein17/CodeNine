@@ -70,8 +70,8 @@
 }
 
 .datauser .btn-primary:hover {
-  background-image: linear-gradient(to right, rgb(248, 182, 59), rgb(245, 63, 63)); /* Mengubah arah gradien saat hover */
-  transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+  background-image: linear-gradient(to right, rgb(255, 62, 62), rgb(243, 181, 65));
+  transform: scale(1.02); /* Sedikit memperbesar tombol saat hover */
 }
 
 footer {

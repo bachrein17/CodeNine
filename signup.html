@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Sign Up</title>
 </head>
 
@@ -53,10 +54,11 @@
                     </div>
                     <div class="inputbx">
                         <span>Password</span>
-                        <input type="password" name="password" id="passwordInput" placeholder="Masukan Password" required>
+                        <input type="password" name="password" id="passwordInput" placeholder="Masukan Password"
+                            required>
                     </div>
                     <div class="inputbx text-center" style="padding-top: 20px;">
-                        <button type="submit" class="btn btn-primary btn-custom">Sign Up</button>
+                        <button type="button" class="btn btn-primary btn-custom" id="signupButton">Sign Up</button>
                     </div>
                 </form>
                 <ul class="sci">
@@ -70,7 +72,8 @@
         </div>
     </section>
 
-    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;">
@@ -84,10 +87,14 @@
                     <p>Masukkan kode verifikasi yang telah dikirimkan ke alamat email anda.</p>
                     <div class="form-group verification-code">
                         <div class="verification-inputs">
-                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')" pattern="[0-9]" required>
-                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')" pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input1" oninput="moveToNext(this, 'input2')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input2" oninput="moveToNext(this, 'input3')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input3" oninput="moveToNext(this, 'input4')"
+                                pattern="[0-9]" required>
+                            <input type="text" maxlength="1" id="input4" oninput="moveToNext(this, 'input5')"
+                                pattern="[0-9]" required>
                             <input type="text" maxlength="1" id="input5" pattern="[0-9]" required>
                         </div>
                         <a class="resend" href="#Resend">Resend Code</a>
@@ -100,7 +107,8 @@
         </div>
     </div>
 
-    <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog" aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
+    <div class="modal fade" id="verificationSuccessModal" tabindex="-1" role="dialog"
+        aria-labelledby="verificationSuccessModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -115,7 +123,8 @@
                     <p>Selamat menjelajahi tradisi rasa anda.</p>
                 </div>
                 <div class="modal-footer" style="border: none; display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="redirectToHomepage()">Homepage</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        onclick="redirectToHomepage()">Homepage</button>
                 </div>
             </div>
         </div>
@@ -140,14 +149,12 @@
             }
         }
 
-        $(document).ready(function () {
-            $('#signupForm').on('submit', function (e) {
-                e.preventDefault();
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("signupButton").addEventListener("click", function () {
                 $('#signupModal').modal('show');
             });
         });
     </script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

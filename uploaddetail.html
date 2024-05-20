@@ -99,194 +99,199 @@
                         placeholder="Deskripsikan cerita menarik tentang resepmu"></textarea>
                 </div>
                 <label for="fileUpload2" class="btn btn-primary">
-                    <input type="file" id="fileUpload2" class="file-input" />
+                    <input type="file" id="fileUpload2" class="file-input" accept="image/*" />
                     <img src="image/uploadicon.png" alt="Upload Icon" class="button-icon" />
                     Unggah foto masakanmu
                 </label>
             </form>
-        </div>
-        <script>
-            const fileUpload = document.getElementById("fileUpload");
-            fileUpload.addEventListener("change", function (event) {
-                const file = event.target.files[0];
+    </div>
+
+    <script>
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
                 const imageURL = URL.createObjectURL(file);
                 const gambarDetailResep = document.getElementById("gambarDetailResep");
                 gambarDetailResep.src = imageURL;
-            });
-        </script>
+            }
+        }
+
+        document.getElementById("fileUpload").addEventListener("change", handleFileUpload);
+        document.getElementById("fileUpload2").addEventListener("change", handleFileUpload);
+    </script>
 
 
-        <!-- Rincian Bahan -->
-        <div class="rincian">
-            <h2>Masukan Rincian Bahan</h2>
-            <div class="bahan">
-                <input type="text" class="bahannya" placeholder="Contoh: 2sdm Garam">
-                <div class="img-container">
-                    <img src="image/tambahdetail.png" alt="Tambah" class="action-button" id="tambah">
-                    <img src="image/kurangdetail.png" alt="Kurang" class="action-button" id="kurang">
-                </div>
+    <!-- Rincian Bahan -->
+    <div class="rincian">
+        <h2>Masukan Rincian Bahan</h2>
+        <div class="bahan">
+            <input type="text" class="bahannya" placeholder="Contoh: 2sdm Garam">
+            <div class="img-container">
+                <img src="image/tambahdetail.png" alt="Tambah" class="action-button" id="tambah">
+                <img src="image/kurangdetail.png" alt="Kurang" class="action-button" id="kurang">
             </div>
         </div>
+    </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const rincianDiv = document.querySelector('.rincian');
-                const tambahButton = document.getElementById('tambah');
-                const kurangButton = document.getElementById('kurang');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rincianDiv = document.querySelector('.rincian');
+            const tambahButton = document.getElementById('tambah');
+            const kurangButton = document.getElementById('kurang');
 
-                function tambahBahan() {
-                    const newBahanDiv = document.createElement('div');
-                    newBahanDiv.classList.add('bahan');
+            function tambahBahan() {
+                const newBahanDiv = document.createElement('div');
+                newBahanDiv.classList.add('bahan');
 
-                    const newInput = document.createElement('input');
-                    newInput.type = 'text';
-                    newInput.classList.add('bahannya');
-                    newInput.placeholder = 'Masukan Bahan lainnya';
+                const newInput = document.createElement('input');
+                newInput.type = 'text';
+                newInput.classList.add('bahannya');
+                newInput.placeholder = 'Masukan Bahan lainnya';
 
-                    const newImgContainer = document.createElement('div');
-                    newImgContainer.classList.add('img-container');
+                const newImgContainer = document.createElement('div');
+                newImgContainer.classList.add('img-container');
 
-                    const newTambahImg = document.createElement('img');
-                    newTambahImg.src = 'image/tambahdetail.png';
-                    newTambahImg.alt = 'Tambah';
-                    newTambahImg.classList.add('action-button');
-                    newTambahImg.id = 'tambah';
+                const newTambahImg = document.createElement('img');
+                newTambahImg.src = 'image/tambahdetail.png';
+                newTambahImg.alt = 'Tambah';
+                newTambahImg.classList.add('action-button');
+                newTambahImg.id = 'tambah';
 
-                    newTambahImg.addEventListener('click', tambahBahan);
+                newTambahImg.addEventListener('click', tambahBahan);
 
-                    const newKurangImg = document.createElement('img');
-                    newKurangImg.src = 'image/kurangdetail.png';
-                    newKurangImg.alt = 'Kurang';
-                    newKurangImg.classList.add('action-button');
-                    newKurangImg.id = 'kurang';
+                const newKurangImg = document.createElement('img');
+                newKurangImg.src = 'image/kurangdetail.png';
+                newKurangImg.alt = 'Kurang';
+                newKurangImg.classList.add('action-button');
+                newKurangImg.id = 'kurang';
 
-                    newKurangImg.addEventListener('click', () => {
-                        rincianDiv.removeChild(newBahanDiv);
-                    });
-
-                    newImgContainer.appendChild(newTambahImg);
-                    newImgContainer.appendChild(newKurangImg);
-
-                    newBahanDiv.appendChild(newInput);
-                    newBahanDiv.appendChild(newImgContainer);
-
-                    rincianDiv.appendChild(newBahanDiv);
-
-                    // Tambah event listener untuk mendeteksi tombol enter pada input baru
-                    newInput.addEventListener('keypress', (event) => {
-                        if (event.key === 'Enter') {
-                            tambahBahan();
-                        }
-                    });
-
-                    // Kembali beri fokus pada input setelah menambahkan bahan
-                    newInput.focus();
-                }
-
-                // Tambah event listener untuk tombol tambah
-                tambahButton.addEventListener('click', tambahBahan);
-
-                // Tambah event listener untuk tombol kurang
-                kurangButton.addEventListener('click', () => {
-                    const bahanDivs = document.querySelectorAll('.bahan');
-                    if (bahanDivs.length > 1) {
-                        rincianDiv.removeChild(bahanDivs[bahanDivs.length - 1]);
-                    }
+                newKurangImg.addEventListener('click', () => {
+                    rincianDiv.removeChild(newBahanDiv);
                 });
 
-                // Event listener untuk mendeteksi tombol enter pada input pertama
-                const firstInput = document.querySelector('.bahannya');
-                firstInput.addEventListener('keypress', (event) => {
+                newImgContainer.appendChild(newTambahImg);
+                newImgContainer.appendChild(newKurangImg);
+
+                newBahanDiv.appendChild(newInput);
+                newBahanDiv.appendChild(newImgContainer);
+
+                rincianDiv.appendChild(newBahanDiv);
+
+                // Tambah event listener untuk mendeteksi tombol enter pada input baru
+                newInput.addEventListener('keypress', (event) => {
                     if (event.key === 'Enter') {
                         tambahBahan();
                     }
                 });
+
+                // Kembali beri fokus pada input setelah menambahkan bahan
+                newInput.focus();
+            }
+
+            // Tambah event listener untuk tombol tambah
+            tambahButton.addEventListener('click', tambahBahan);
+
+            // Tambah event listener untuk tombol kurang
+            kurangButton.addEventListener('click', () => {
+                const bahanDivs = document.querySelectorAll('.bahan');
+                if (bahanDivs.length > 1) {
+                    rincianDiv.removeChild(bahanDivs[bahanDivs.length - 1]);
+                }
             });
 
-        </script>
+            // Event listener untuk mendeteksi tombol enter pada input pertama
+            const firstInput = document.querySelector('.bahannya');
+            firstInput.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    tambahBahan();
+                }
+            });
+        });
+
+    </script>
 
 
-        <div class="dropdown">
-            <div class="banyaksaji">
-                <h3>Banyak Sajian</h3>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Untuk berapa porsi ?
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">1 Porsi</a></li>
-                        <li><a class="dropdown-item" href="#">2 Porsi</a></li>
-                        <li><a class="dropdown-item" href="#">3 Porsi</a></li>
-                        <li><a class="dropdown-item" href="#">4 Porsi</a></li>
-                        <li><a class="dropdown-item" href="#">5 Porsi</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="waktu">
-                <h3>Waktu Memasak</h3>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Berapa Menit ?
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">5 Menit</a></li>
-                        <li><a class="dropdown-item" href="#">10 Menit </a></li>
-                        <li><a class="dropdown-item" href="#">20 Menit</a></li>
-                        <li><a class="dropdown-item" href="#">30 Menit</a></li>
-                        <li><a class="dropdown-item" href="#">40 Menit</a></li>
-                        <li><a class="dropdown-item" href="#">60 Menit</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="kategori">
-                <h3>Kategori</h3>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton3"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Kategori makanan
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                        <li><a class="dropdown-item" href="#">Camilan</a></li>
-                        <li><a class="dropdown-item" href="#">Takjil</a></li>
-                        <li><a class="dropdown-item" href="#">Makan Malam</a></li>
-                    </ul>
-                </div>
+    <div class="dropdown">
+        <div class="banyaksaji">
+            <h3>Banyak Sajian</h3>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Untuk berapa porsi ?
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">1 Porsi</a></li>
+                    <li><a class="dropdown-item" href="#">2 Porsi</a></li>
+                    <li><a class="dropdown-item" href="#">3 Porsi</a></li>
+                    <li><a class="dropdown-item" href="#">4 Porsi</a></li>
+                    <li><a class="dropdown-item" href="#">5 Porsi</a></li>
+                </ul>
             </div>
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const dropdownItems = document.querySelectorAll('.dropdown-item');
+        <div class="waktu">
+            <h3>Waktu Memasak</h3>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Berapa Menit ?
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">5 Menit</a></li>
+                    <li><a class="dropdown-item" href="#">10 Menit </a></li>
+                    <li><a class="dropdown-item" href="#">20 Menit</a></li>
+                    <li><a class="dropdown-item" href="#">30 Menit</a></li>
+                    <li><a class="dropdown-item" href="#">40 Menit</a></li>
+                    <li><a class="dropdown-item" href="#">60 Menit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kategori">
+            <h3>Kategori</h3>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton3"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Kategori makanan
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                    <li><a class="dropdown-item" href="#">Camilan</a></li>
+                    <li><a class="dropdown-item" href="#">Takjil</a></li>
+                    <li><a class="dropdown-item" href="#">Makan Malam</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
 
-                dropdownItems.forEach(item => {
-                    item.addEventListener('click', (e) => {
-                        e.preventDefault(); // Untuk mencegah redirect jika link memiliki href
-                        const dropdown = item.closest('.dropdown');
-                        const dropdownButton = dropdown.querySelector('.dropdown-toggle');
-                        dropdownButton.textContent = item.textContent;
-                    });
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault(); // Untuk mencegah redirect jika link memiliki href
+                    const dropdown = item.closest('.dropdown');
+                    const dropdownButton = dropdown.querySelector('.dropdown-toggle');
+                    dropdownButton.textContent = item.textContent;
                 });
             });
-        </script>
-        <div class="caramasak">
-            <label for="fileUpload0" class="upload" style="padding-bottom: 20px;">
-                <input type="file" id="fileUpload0" class="file-input" accept="image/*">
-                <img id="gambarDetailResep0" src="image/unggahdisini.png" alt="upload resep" />
-            </label>
-            <input type="text" class="" placeholder="Contoh: Langkah 1 kupas bawang" />
-            <img src="image/tambahdetail.png" alt="tambah detail" onclick="addCaramasak()">
-            <img src="image/kurangdetail.png" alt="kurang detail" onclick="removeCaramasak()">
-        </div>
-        <script>
-            let caramasakCount = 1;
+        });
+    </script>
+    <div class="caramasak">
+        <label for="fileUpload0" class="upload" style="padding-bottom: 20px;">
+            <input type="file" id="fileUpload0" class="file-input" accept="image/*">
+            <img id="gambarDetailResep0" src="image/unggahdisini.png" alt="upload resep" />
+        </label>
+        <input type="text" class="" placeholder="Contoh: Langkah 1 kupas bawang" />
+        <img src="image/tambahdetail.png" alt="tambah detail" onclick="addCaramasak()">
+        <img src="image/kurangdetail.png" alt="kurang detail" onclick="removeCaramasak()">
+    </div>
+    <script>
+        let caramasakCount = 1;
 
-            function addCaramasak() {
-                const container = document.querySelector('.container');
+        function addCaramasak() {
+            const container = document.querySelector('.container');
 
-                const newDiv = document.createElement('div');
-                newDiv.className = 'caramasak';
-                newDiv.innerHTML = `
+            const newDiv = document.createElement('div');
+            newDiv.className = 'caramasak';
+            newDiv.innerHTML = `
             <label for="fileUpload${caramasakCount}" class="upload" style="padding-bottom: 20px;">
                 <input type="file" id="fileUpload${caramasakCount}" class="file-input" accept="image/*" onchange="loadImage(event, ${caramasakCount})">
                 <img id="gambarDetailResep${caramasakCount}" src="image/unggahdisini.png" alt="upload resep" />
@@ -296,36 +301,36 @@
             <img src="image/kurangdetail.png" alt="kurang detail" onclick="removeCaramasak()">
         `;
 
-                container.appendChild(newDiv);
-                caramasakCount++;
+            container.appendChild(newDiv);
+            caramasakCount++;
+        }
+
+        function removeCaramasak() {
+            const container = document.querySelector('.container');
+            const caramasakDivs = container.querySelectorAll('.caramasak');
+
+            if (caramasakDivs.length > 1) {
+                container.removeChild(caramasakDivs[caramasakDivs.length - 1]);
             }
+        }
 
-            function removeCaramasak() {
-                const container = document.querySelector('.container');
-                const caramasakDivs = container.querySelectorAll('.caramasak');
+        function loadImage(event, index) {
+            const image = document.getElementById(`gambarDetailResep${index}`);
+            const file = event.target.files[0];
+            const imageURL = URL.createObjectURL(file);
+            image.src = imageURL;
+        }
 
-                if (caramasakDivs.length > 1) {
-                    container.removeChild(caramasakDivs[caramasakDivs.length - 1]);
-                }
-            }
-
-            function loadImage(event, index) {
-                const image = document.getElementById(`gambarDetailResep${index}`);
+        document.addEventListener("DOMContentLoaded", function () {
+            const fileUpload = document.getElementById("fileUpload0");
+            fileUpload.addEventListener("change", function (event) {
                 const file = event.target.files[0];
                 const imageURL = URL.createObjectURL(file);
-                image.src = imageURL;
-            }
-
-            document.addEventListener("DOMContentLoaded", function () {
-                const fileUpload = document.getElementById("fileUpload0");
-                fileUpload.addEventListener("change", function (event) {
-                    const file = event.target.files[0];
-                    const imageURL = URL.createObjectURL(file);
-                    const gambarDetailResep = document.getElementById("gambarDetailResep0");
-                    gambarDetailResep.src = imageURL;
-                });
+                const gambarDetailResep = document.getElementById("gambarDetailResep0");
+                gambarDetailResep.src = imageURL;
             });
-        </script>
+        });
+    </script>
     </div>
     <div class="container">
         <div class="katakunci">

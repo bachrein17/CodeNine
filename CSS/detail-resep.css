@@ -1,31 +1,149 @@
-.profile {
+.profile-deRes {
     display: flex;
     align-items: center;
     gap: 12px;
-}
-
-.profile img col-3{
+  }
+  
+  .profile-deRes img {
     border-radius: 50%;
-    border-radius: 60px;
     max-width: 60px;
     max-height: 60px;
-}
-
-/* .profile-nama {
+  }
+  
+  .profile-deRes p {
+    font-family: "Poppins";
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+  
+  
+  .deskripsi-resep {
+    background: linear-gradient(to right, red, orange);
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .deskripsi-resep p {
+    font-family: poppins;
+    color: white;
+    text-align: justify;
+    margin-bottom: 0rem;
+  }
+  
+  .tag {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tag-deRes {
+    background: linear-gradient(to right, red, orange);
+    border-radius: 25px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 192px;
+    padding: 4px 12px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .tag-deRes p {
+    color: white;
+    font-family: poppins;
+    margin: 0;
+  }
+  
+  .baKet{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .baKet h3 {
+    font-family: poppins;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .isi {
+  justify-content: center;
+    padding: 10px 40px;
+    border: 2px;
+    border-style: solid;
+    border-color: #FFA800;
+    border-radius: 30px;
+  }
+  
+  .isi li{
     font-family: poppins;
     font-size: 16px;
-}
-
-.profil-waktu {
-    font-family: poppins;
-    font-size: 14px;
-} */
-
-.deskripsi {
-    rounded:4;
-    background-color: linear-gradient(45deg, #FF2525, #FF2525, #FFA800);
-}
-
-.deskripsi p{
-    font-family: poppins;
-}
+    font-weight: 400;
+    
+  }
+  .baKet ul li::marker {
+      color: black;
+      font-size: 1.2em;
+  }
+  
+  
+  .step{
+      display: inline-flex;
+      padding: 15px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 2px;
+      border-style: solid;
+      border-color: #FFA800;
+      border-radius: 30px;
+  }
+  
+  .step2 col{
+    justify-content: center;
+  }
+  .step .step2 img {
+  width: 325px;
+  height: 286px;
+  border-radius: 25px;
+  
+  align-self: center;
+  
+  }
+  
+  .step .step2 p {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  }
+  
+  .profile-ulasan {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .profile-ulasan img {
+    border-radius: 50%;
+    max-width: 60px;
+    max-height: 60px;
+  }
+  
+  .profile-ulasan p {
+    font-family: "Poppins";
+    color: black;
+    background-clip: text;
+    margin: 0;
+  }
+  
+  
+  

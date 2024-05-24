@@ -1,153 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/detail-resep.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/detail-resep.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Tradisi Rasa</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="homepage.html" style="padding-left: 5%;"><img src="image/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="padding-right: 5%;">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="padding: 10px, 10px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="homepage.html" onclick="closeNavbar()">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="forum.html"
-                            onclick="closeNavbar()">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="resep.html" onclick="closeNavbar()">Resep</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="favorit.html"
-                            onclick="closeNavbar()">Favorit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="uploadresep.html"
-                            onclick="closeNavbar()">Unggah Resep</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#notif" onclick="closeNavbar()"> <img
-                                src="image/notifhitam.png" alt="" class="icon-img"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login.html" onclick="closeNavbar()"> <img
-                                src="image/akunhitam.png" alt=""></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="padding-left: 5%"
+          ><img src="image/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          style="padding-right: 5%"
+        >
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0"
+            style="padding: 10px, 10px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                onclick="closeNavbar()"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="forum.html"
+                onclick="closeNavbar()"
+                >Forum</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#resep"
+                onclick="closeNavbar()"
+                >Resep</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="favorit.html"
+                onclick="closeNavbar()"
+                >Favorit</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#uploadresep"
+                onclick="closeNavbar()"
+                >Unggah Resep</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#notif"
+                onclick="closeNavbar()"
+              >
+                <img src="image/notifhitam.png" alt="" class="icon-img"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="login.html"
+                onclick="closeNavbar()"
+              >
+                <img src="image/akunhitam.png" alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
-        <script>
-            function closeNavbar() {
-                var navbar = document.getElementById('navbarNav');
-                if (navbar.classList.contains('show')) {
-                    navbar.classList.remove('show');
-                }
-            }
-        </script>
+      </div>
+      <script>
+        function closeNavbar() {
+          var navbar = document.getElementById("navbarNav");
+          if (navbar.classList.contains("show")) {
+            navbar.classList.remove("show");
+          }
+        }
+      </script>
     </nav>
+
     <div class="container">
-        <header class="container-fluid banner">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="bi bi-arrow-left mb-">
-                        </class=>
+      <div class="bi bi-arrow-left mt-2" style="padding-left: 5%"></div>
 
-                    </div>
-                    <div class="text-center">
-                        <img src="image/detail-resep-1.png" class="img-fluid" alt="Gambar">
-                    </div>
+      <!-- Card Publisher -->
+      <header class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="text-center">
+              <img
+                src="image/detail-resep-1.png"
+                class="img-fluid"
+                alt="Profile"
+              />
+            </div>
+          </div>
+
+          <section class="col-xxl-6 row align-items-center d-flex">
+            <div>
+              <!-- nama resto -->
+              <div class="pt-1 row align-items-center d-flex">
+                <img
+                  class="position-relative col-1"
+                  src="icon/icon-tag-shop.svg"
+                  alt=""
+                  style="display: inline-block"
+                  href="#"
+                />
+                <p
+                  class="text-black fs-4 fw-semibold font-family-Poppins col-11 m-0 px-3 py-2"
+                >
+                  Seblak Bandung Kriuk Kriuk
+                </p>
+              </div>
+              <!-- //nama resto -->
+
+              <!-- profile -->
+              <div class="profile-deRes">
+                <img src="image/profile-publisher-detail-resep.png" alt="" />
+                <div class="col-9 row">
+                  <p>Mami Indah</p>
+                  <p>Diunggah 12 menit yang lalu</p>
                 </div>
-                <div class="col-md-6">
-                    <div>
-                        <h1 style="font-family: 'Poppins'; font-size: 25px; font-weight: 600;"> <i
-                                class="bi bi-shop-window"></i> Seblak Bandung Kriuk Kriuk</h1>
-                        <div class="profile">
-                            <img class="profile-img" src="image/profile-publisher-detail-resep.png" alt="">
-                            <div class="col-9 row">
-                                <p class="fs-5 fw-normal m-0 px-3 py-2 text-danger">Mami Indah</p>
-                                <p class="fs-6 fw-normal m-0 px-3 py-2">Diunggah 12 menit yang lalu
-                                </p>
-                            </div>
-                        </div>
-                        <div class="deskripsi bg-warning">
-                            <p class="deskripsi-p">Seblak adalah hidangan khas Indonesia yang pedas dan menggugah selera. Terdiri dari mie instan, kerupuk, telur, bakso, daging ayam/sapi, dan sayuran seperti kubis dan wortel. Semua bahan dimasak bersama dengan bumbu pedas seperti cabai, bawang putih, dan bawang merah. Disajikan panas-panas, seblak memiliki cita rasa kaya dengan kombinasi pedas, gurih, dan manis dari kecap manis. Menjadi favorit di warung makan pinggir jalan, seblak merupakan salah satu ikon kuliner Indonesia yang wajib dicoba.</p>
-                        </div>
-                    </div>
+              </div>
+              <!-- //profile -->
+
+              <!-- deskripsi -->
+              <div class="deskripsi-resep">
+                <p>
+                  Seblak adalah hidangan khas Indonesia yang pedas dan menggugah
+                  selera. Terdiri dari mie instan, kerupuk, telur, bakso, daging
+                  ayam/sapi, dan sayuran seperti kubis dan wortel. Semua bahan
+                  dimasak bersama dengan bumbu pedas seperti cabai, bawang
+                  putih, dan bawang merah. Disajikan panas-panas, seblak
+                  memiliki cita rasa kaya dengan kombinasi pedas, gurih, dan
+                  manis dari kecap manis. Menjadi favorit di warung makan
+                  pinggir jalan, seblak merupakan salah satu ikon kuliner
+                  Indonesia yang wajib dicoba.
+                </p>
+              </div>
+              <!-- //deskripsi -->
+
+              <!-- tag -->
+              <div class="tag">
+                <div class="tag-deRes">
+                  <!-- waktu -->
+                  <div class="position-relative">
+                    <img src="icon/icon-waktu.svg" class="py-2" alt="" />
+                  </div>
+                  <p>30 Menit</p>
                 </div>
+
+                <!-- porsi -->
+                <div class="tag-deRes">
+                  <div class="position-relative">
+                    <img src="icon/icon-prosi.svg" class="py-2" alt="" />
+                  </div>
+                  <p>1 Porsi</p>
+                </div>
+
+                <!-- kategori -->
+                <div class="tag-deRes">
+                  <div class="position-relative">
+                    <img src="icon/icon-kategori.svg" class="py-2" alt="" />
+                  </div>
+                  <p>Camilan</p>
+                </div>
+                <!-- //tag -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <!-- Card Publisher -->
+
+      <!-- Bahan dan Keterangan -->
+      <section class="container-fluid">
+        <div class="row mx-5">
+          <!-- bahan  -->
+          <div class="baKet col-6 mb-2">
+            <h3>Bahan-Bahan</h3>
+
+            <ul class="isi">
+              <li>1 genggam</li>
+              <li>1 Bonggol pokchoy</li>
+              <li>Bakso (Sesuai selera )</li>
+              <li>2 Sosis, potong-potong</li>
+              <li>Ceker Ayam (Sesuai selera)</li>
+              <li>Air Putih</li>
+              <li>Kaldu bubuk</li>
+              <li>1/4 Sendok teh merica bubuk</li>
+              <li>1 Butir telur</li>
+              <li>2 Ruas jari kencur</li>
+              <li>4 Cabe merah keriting</li>
+              <li>3 Cabe rawit ( Sesuai selera)</li>
+              <li>4 Siung bawang merah</li>
+              <li>3 Siung bawang putih</li>
+              <li>1 Butir kemiri</li>
+            </ul>
+          </div>
+          <!-- //bahan -->
+          <!-- keterangan -->
+          <div class="baKet col-6">
+            <h3>Alat yang diperlukan</h3>
+
+            <ul class="isi">
+              <li>1 genggam</li>
+              <li>1 Bonggol pokchoy</li>
+              <li>Bakso (Sesuai selera )</li>
+              <li>2 Sosis, potong-potong</li>
+              <li>Ceker Ayam (Sesuai selera)</li>
+              <li>Air Putih</li>
+              <li>Kaldu bubuk</li>
+              <li>1/4 Sendok teh merica bubuk</li>
+              <li>1 Butir telur</li>
+              <li>2 Ruas jari kencur</li>
+              <li>4 Cabe merah keriting</li>
+              <li>3 Cabe rawit ( Sesuai selera)</li>
+              <li>4 Siung bawang merah</li>
+              <li>3 Siung bawang putih</li>
+              <li>1 Butir kemiri</li>
+            </ul>
+          </div>
+          <!-- //keterangan -->
+        </div>
+      </section>
+      <!-- //Bahan dan Keterangan -->
+
+      <!-- cara masak -->
+      <section class="container-fluid">
+        <div class="row mx-4">
+            <h3>Cara Memasak</h3>
+
+            <div class="step row mx-4 mb-4">
+
+            <div class="step2 col">
+                <img src="step/seblak/1.png" alt="seblak2">
+                <p>1. Rendam kerupuk bawang dengan air kira-kira 30 menit, laku tiriskan</p>
+            </div>
+
+            <div class="step2 col">
+                <img src="step/seblak/2.png" alt="seblak3">
+                <p>2. Tumis bumbu halus sampai wangi, kemudian tambahkan air.</p>
+            </div>
+
+            <div class="step2 col">
+                <img src="step/seblak/3.png" alt="seblak4">
+                <p>3. Setelah itu masukkan sosis, bakso, dan ceker. Lalu tambahkan kaldu bubuk dan merica.</p>
+            </div>
+
+            <div class="step2 col">
+                <img src="step/seblak/4.png" alt="seblak5">
+                <p>4. Lalu masukkan sayur pokchoy. lalu masukkan telur. aduk cepat.</p>
+            </div>
+
+            <div class="step2 col">
+                <img src="step/seblak/5.png" alt="seblak6">
+                <p>5. Aduk rata masak sampai sayur layu dan kerupuk lembek. koreksi rasa.. lalu matikan api.</p>
+            </div>
+
+            <div class="step2 col">
+                <img src="step/seblak/6.png" alt="seblak1">
+                <p>1. Rendam kerupuk bawang dengan air kira-kira 30 menit, laku tiriskan</p>
+            </div>
 
             </div>
-    </div>
-    </header>
-
-    <div>
-        <!-- Bahan dan Keterangan -->
-    </div>
-
-
-    <footer>
-        <div class="container">
-            <div class="tradisirasafooter">
-                <h3>Tradisi Rasa</h3>
-                <div class="deskripsi">
-                    <img src="image/logo-footer.png" alt="Logo Tradisi Rasa">
-                    <p class="text-break">Bergabunglah dalam perjalanan memasak yang memperkaya di forum kami, di
-                        mana
-                        resep-resep terbaik bermuara pada satu cita rasa: tradisional.</p>
-                </div>
-            </div>
-            <div class="sitemap">
-                <h3>Site Map</h3>
-                <div class="sitemapk">
-                    <ul class="nostyle">
-                        <li><a href="#">Favorit</a></li>
-                        <li><a href="forum.html">Forum</a></li>
-                    </ul>
-                    <ul class="ul2">
-                        <li><a href="#">Resep</a></li>
-                        <li><a href="#">Unggah Resep</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="socmed">
-                <h3>Social Media</h3>
-                <ul class="nostyle">
-                    <li><a href="#"> <img src="image/facebookicon.png" alt="Facebook Icon">Tradisi Rasa</a></li>
-                    <li><a href="#"> <img src="image/igicon.png" alt="Instagram Icon">Tradisi.Rasa</a></li>
-                    <li><a href="#"><img src="image/youtubeicon.png" alt="Youtube Icon">Tradisi Rasa</a></li>
-                </ul>
+            
             </div>
         </div>
-    </footer>
-    <footer class="footer2">
-        <p>All Right Reserved</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+      </section>
+      <!-- //cara masak -->
 
+      <!-- ulasan -->
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6 mx-5">
+            <div class="profile-ulasan">
+              <img src="image/ulasan1.png" alt="" />
+              <div class="col-9 row">
+                <p>Shabih</p>
+                <p>12 Juni 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //ulasan -->
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="tradisirasafooter">
+            <h3>Tradisi Rasa</h3>
+            <div class="deskripsi">
+              <img src="image/logo-footer.png" alt="Logo Tradisi Rasa" />
+              <p class="text-break">
+                Bergabunglah dalam perjalanan memasak yang memperkaya di forum
+                kami, di mana resep-resep terbaik bermuara pada satu cita rasa:
+                tradisional.
+              </p>
+            </div>
+          </div>
+          <div class="sitemap">
+            <h3>Site Map</h3>
+            <div class="sitemapk">
+              <ul class="nostyle">
+                <li><a href="#">Favorit</a></li>
+                <li><a href="forum.html">Forum</a></li>
+              </ul>
+              <ul class="ul2">
+                <li><a href="#">Resep</a></li>
+                <li><a href="#">Unggah Resep</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="socmed">
+            <h3>Social Media</h3>
+            <ul class="nostyle">
+              <li>
+                <a href="#">
+                  <img
+                    src="image/facebookicon.png"
+                    alt="Facebook Icon"
+                  />Tradisi Rasa</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="image/igicon.png"
+                    alt="Instagram Icon"
+                  />Tradisi.Rasa</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="image/youtubeicon.png" alt="Youtube Icon" />Tradisi
+                  Rasa</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer2">
+        <p>All Right Reserved</p>
+      </footer>
+      <!-- //footer -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
 </html>

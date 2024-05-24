@@ -22,13 +22,10 @@
 } */
 
 .deskripsi {
+    rounded:4;
     background-color: linear-gradient(45deg, #FF2525, #FF2525, #FFA800);
 }
 
 .deskripsi p{
     font-family: poppins;
-}
-
-.deskripsi {
-    background-color: linear-gradient(45deg, #FF2525, #FF2525, #FFA800);
 }
